@@ -3,21 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Seed Cartographer – Minecraft Seed Map, Structure Finder and 3D Viewer</title>
-<meta name="description" content="Free Minecraft seed map: enter any seed, edition and version (Java 1.7 to 26.2) to find villages, strongholds, ancient cities, trial chambers and every other structure, then explore the terrain in 3D.">
-<meta name="keywords" content="minecraft seed map, structure finder, stronghold finder, village finder, minecraft 26.2 seed map, ancient city finder, trial chambers finder, minecraft 3d map">
+<title>Seed Cartographer – Minecraft Seed Map, Structure Finder & 3D World Viewer</title>
+<meta name="description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.">
+<meta name="keywords" content="minecraft seed map, minecraft structure finder, minecraft seed viewer, minecraft biome finder, minecraft 3d map, minecraft world viewer, seed cartographer, stronghold finder, village finder, ancient city finder, trial chambers finder, woodland mansion finder, ocean monument finder, nether fortress finder, bastion finder, end city finder, slime chunk finder, buried treasure finder, ruined portal finder, pillager outpost finder, desert temple finder, minecraft java seed map, minecraft bedrock seed map, minecraft 26.3 seed map, minecraft 26.2 seed map, minecraft 1.21 seed map, minecraft 1.20 seed map, minecraft 1.18 seed map, minecraft coordinates, minecraft seeds, large biomes">
+<meta name="author" content="Seed Cartographer">
+<meta name="application-name" content="Seed Cartographer">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
 <link rel="canonical" href="https://seed-cartographer.de5.net/">
-<meta name="robots" content="index, follow">
 <!-- Paste the HTML-tag code from Google Search Console here if you verify that way: -->
 <!-- <meta name="google-site-verification" content="YOUR_CODE"> -->
+<meta name="theme-color" content="#2c7a4b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Seed Map">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Seed Cartographer – Minecraft Seed Map and Structure Finder">
-<meta property="og:description" content="Free Minecraft seed map: enter any seed, edition and version (Java 1.7 to 26.2) to find villages, strongholds, ancient cities, trial chambers and every other structure, then explore the terrain in 3D.">
+<meta property="og:site_name" content="Seed Cartographer">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Seed Cartographer – Minecraft Seed Map & Structure Finder">
+<meta property="og:description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.">
 <meta property="og:url" content="https://seed-cartographer.de5.net/">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"Seed Cartographer","url":"https://seed-cartographer.de5.net/","applicationCategory":"GameApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free Minecraft seed map: enter any seed, edition and version (Java 1.7 to 26.2) to find villages, strongholds, ancient cities, trial chambers and every other structure, then explore the terrain in 3D."}
-</script>
+<meta property="og:image" content="https://seed-cartographer.de5.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Seed Cartographer showing a shaded Minecraft biome map with structure markers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seed Cartographer – Minecraft Seed Map & Structure Finder">
+<meta name="twitter:description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.">
+<meta name="twitter:image" content="https://seed-cartographer.de5.net/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,14 +48,89 @@
   "url": "https://seed-cartographer.de5.net/"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Seed Cartographer",
+  "url": "https://seed-cartographer.de5.net/",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Any (web browser)",
+  "browserRequirements": "Requires JavaScript and WebAssembly",
+  "image": "https://seed-cartographer.de5.net/og-image.png",
+  "description": "Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "name": "Minecraft",
+    "gamePlatform": [
+      "Java Edition",
+      "Bedrock Edition"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mojang Studios"
+    }
+  },
+  "featureList": [
+    "Find all Minecraft structures from a seed",
+    "Biome map with hill shading",
+    "Nearest structures to your coordinates",
+    "3D world view with walk mode",
+    "Nether and End support",
+    "Every Java and Bedrock version"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why isn't a structure there when I go to it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check that the edition, version and Large Biomes setting match your world. Structures can also fail to generate in the game if the terrain is unsuitable, and the coordinates point to the corner of the structure's starting chunk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work for Bedrock?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Biomes match Java from Bedrock 1.18 onward. Bedrock places many structures differently from Java, so treat Bedrock structure positions as a guide and check them in-game."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my seed uploaded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The world generator runs inside your browser, and your seed and location are only saved on your own device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do Nether coordinates work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One block in the Nether equals eight in the Overworld. When you switch to the Nether, your Overworld X and Z are divided by 8 for you."
+      }
+    }
+  ]
+}
+</script>
 <style>body{margin:0;font-size:14px} img{max-width:100%} :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 </head>
 <body>
 <noscript><div style="padding:16px;font-family:sans-serif">
-<h1>Seed Cartographer – Minecraft seed map and structure finder</h1>
-<p>Enter a Minecraft seed, edition and version to see every village, stronghold, desert pyramid, jungle temple, witch hut, igloo, ocean monument, woodland mansion, pillager outpost, ruined portal, ancient city, trail ruins, trial chambers, shipwreck, ocean ruin, buried treasure, mineshaft, nether fortress, bastion remnant and end city. Enter your X Y Z coordinates to find the nearest structures and view the land around you in 3D. Supports Java 1.7 to 26.2.</p>
-<p>This tool needs JavaScript turned on.</p></div></noscript>
-
+<p>Seed Cartographer needs JavaScript turned on. It is a free Minecraft seed map: enter a seed, edition and version to find every village, stronghold, desert pyramid, jungle temple, witch hut, igloo, ocean monument, woodland mansion, pillager outpost, ruined portal, ancient city, trail ruins, trial chambers, shipwreck, ocean ruin, buried treasure, mineshaft, nether fortress, bastion remnant and end city.</p></div></noscript>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,7 +177,7 @@ input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px s
 .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
 .btn.small { height: 28px; padding: 0 10px; font-size: 12.5px; }
 .check { display: flex; align-items: center; gap: 6px; height: 36px; font-size: 13px; }
-.seedinfo { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); align-self: center; }
+.seedinfo { font-family: var(--f-mono); font-size: 10.5px; color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 400; }
 .notice { background: var(--warn-bg); color: var(--warn-ink); border-radius: 6px; padding: 8px 12px; font-size: 13px; line-height: 1.45; }
 main { flex: 1; min-height: 0; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 12px; }
 aside { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: auto; display: flex; flex-direction: column; min-height: 0; }
@@ -135,34 +231,158 @@ aside h2 { font-family: var(--f-display); font-weight: 500; font-size: 15px; mar
 @media (pointer: coarse) { .pad { display: grid; } }
 .bar3d .btn[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .copyok { color: var(--accent); font-size: 12px; }
-@media (max-width: 760px) {
-  main { grid-template-columns: 1fr; grid-template-rows: minmax(360px, 60vh) auto; }
-  .stage { order: -1; }
-  aside { overflow: visible; }
-  #seed { width: 100%; }
-  header.bar > .field.seedf { flex: 1 1 100%; }
-  .app { height: auto; min-height: 100%; }
+
+/* ---------- header actions, about, tour ---------- */
+.settings { display: contents; }
+.hdr-actions { display: flex; gap: 6px; margin-left: auto; align-self: end; }
+.btn.ghost { background: transparent; }
+.btn .ico, .mtabs .ico { width: 18px; height: 18px; flex: none; }
+.btn.withico { display: inline-flex; align-items: center; gap: 6px; }
+.mtabs, .m-only, .sheet-handle { display: none; }
+select optgroup { font-weight: 600; }
+
+dialog.about { width: min(760px, calc(100% - 32px)); max-height: min(86vh, 900px); padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); color: var(--ink); box-shadow: 0 24px 80px rgba(0,0,0,.45); }
+dialog.about[open] { animation: popIn .32s cubic-bezier(.2,.9,.3,1.15); display: flex; flex-direction: column; }
+dialog.about::backdrop { background: rgba(8,12,10,.62); backdrop-filter: blur(2px); animation: fadeIn .25s ease; }
+.about-head { display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-bottom: 1px solid var(--line); }
+.about-head h2 { font-family: var(--f-display); font-weight: 700; font-size: 22px; margin: 0; letter-spacing: .02em; }
+.about-head p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+.about-body { overflow: auto; padding: 4px 20px 20px; display: flex; flex-direction: column; gap: 6px; line-height: 1.55; font-size: 14px; }
+.about-body h3 { font-family: var(--f-display); font-weight: 500; font-size: 16px; margin: 16px 0 4px; letter-spacing: .03em; }
+.about-body p { margin: 0; max-width: 68ch; }
+.feat { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; }
+.feat div { background: var(--chip); border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; }
+.feat b { display: block; font-size: 13.5px; margin-bottom: 2px; }
+ol.steps { counter-reset: st; list-style: none; padding: 0; margin: 4px 0 0; display: flex; flex-direction: column; gap: 8px; }
+ol.steps li { counter-increment: st; display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; }
+ol.steps li::before { content: counter(st); width: 26px; height: 26px; border-radius: 6px; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font-family: var(--f-display); font-weight: 700; font-size: 13px; }
+ol.steps li span { padding-top: 2px; }
+.about-body details { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
+.about-body details + details { margin-top: 6px; }
+.about-body summary { cursor: pointer; font-weight: 600; }
+.about-body details p { margin-top: 6px; }
+.about-body code { font-family: var(--f-mono); font-size: 12.5px; background: var(--chip); padding: 1px 5px; border-radius: 4px; }
+.about-foot { display: flex; gap: 8px; justify-content: flex-end; padding: 12px 20px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.legal { color: var(--muted); font-size: 12px; margin-top: 10px !important; }
+.about-body a { color: var(--accent); }
+
+/* animated grass block used in the welcome and About */
+.blocklogo { width: 56px; height: 56px; flex: none; animation: bob 3.2s ease-in-out infinite; filter: drop-shadow(0 6px 6px rgba(0,0,0,.25)); }
+.blocklogo.big { width: 92px; height: 92px; }
+
+.tour { position: fixed; inset: 0; z-index: 1000; }
+.tour-spot { position: fixed; border-radius: 10px; box-shadow: 0 0 0 9999px rgba(8,12,10,.66); outline: 2px solid var(--accent); outline-offset: 2px;
+  transition: left .45s cubic-bezier(.3,.8,.2,1), top .45s cubic-bezier(.3,.8,.2,1), width .45s cubic-bezier(.3,.8,.2,1), height .45s cubic-bezier(.3,.8,.2,1), opacity .3s; animation: pulse 1.8s ease-in-out infinite; pointer-events: none; }
+.tour-spot.center { left: 50% !important; top: 50% !important; width: 0 !important; height: 0 !important; outline-color: transparent; animation: none; }
+.tour-card { position: fixed; width: min(360px, calc(100vw - 32px)); background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 12px; padding: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.4);
+  display: flex; flex-direction: column; gap: 10px; transition: left .45s cubic-bezier(.3,.8,.2,1), top .45s cubic-bezier(.3,.8,.2,1); }
+.tour-card.hero { width: min(440px, calc(100vw - 32px)); align-items: center; text-align: center; padding: 24px 22px 18px; }
+.tour-card .tc-body { display: flex; flex-direction: column; gap: 6px; animation: slideUp .35s ease both; }
+.tour-card.hero .tc-body { align-items: center; }
+.tour-card .tc-step { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); letter-spacing: .04em; }
+.tour-card h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: 18px; letter-spacing: .02em; }
+.tour-card.hero h3 { font-size: 24px; }
+.tour-card p { margin: 0; line-height: 1.5; font-size: 14px; }
+.tour-foot { display: flex; align-items: center; gap: 8px; width: 100%; }
+.tour-dots { display: flex; gap: 5px; margin-right: auto; }
+.tour-dots i { width: 7px; height: 7px; border-radius: 2px; background: var(--line); transition: background .3s, transform .3s; }
+.tour-dots i.on { background: var(--accent); transform: scale(1.25); }
+.tour-skip { border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 13px; padding: 4px 2px; text-decoration: underline; text-underline-offset: 2px; }
+.hero-pins { display: flex; gap: 8px; justify-content: center; }
+.hero-pins .glyph { animation: popPin .5s cubic-bezier(.2,.9,.3,1.4) both; }
+.hero-pins .glyph:nth-child(2) { animation-delay: .12s; } .hero-pins .glyph:nth-child(3) { animation-delay: .24s; }
+.hero-pins .glyph:nth-child(4) { animation-delay: .36s; } .hero-pins .glyph:nth-child(5) { animation-delay: .48s; }
+@keyframes bob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+@keyframes pulse { 0%, 100% { outline-offset: 2px } 50% { outline-offset: 6px } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+@keyframes popIn { from { opacity: 0; transform: scale(.94) translateY(10px) } to { opacity: 1; transform: none } }
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes popPin { from { opacity: 0; transform: scale(.3) translateY(10px) } to { opacity: 1; transform: none } }
+
+@media (max-width: 1520px) and (min-width: 821px) {
+  .hdr-actions .lbltxt { display: none; }
+  .hdr-actions .btn { padding: 0 9px; }
+  #seed { width: 150px; }
+  #version { width: 128px; }
+  .lbl-long { display: none; }
+  header.bar { gap: 10px 12px; }
 }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+/* ---------- phones: full-screen map, bottom tabs, sliding panel ---------- */
+@media (max-width: 820px) {
+  body { font-size: 15px; }
+  .app { padding: 0; gap: 0; height: 100%; }
+  header.bar { flex-wrap: nowrap; align-items: center; gap: 10px; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: var(--panel); border-bottom: 1px solid var(--line); }
+  .brand { min-width: 0; margin: 0; }
+  .brand h1 { font-size: 19px; }
+  .brand span { font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hdr-actions { align-self: center; }
+  .hdr-actions .btn { height: 36px; padding: 0 10px; }
+  .hdr-actions .lbltxt { display: none; }
+  header.bar > .settings, .app > .notice { display: none; }
+  main { display: flex; flex-direction: column; gap: 0; position: relative; }
+  .stage { flex: 1; border-radius: 0; border: 0; }
+  aside { position: absolute; left: 0; right: 0; bottom: 0; max-height: 64%; z-index: 6; border-radius: 16px 16px 0 0; border-bottom: 0; box-shadow: 0 -10px 30px rgba(0,0,0,.28); transition: transform .3s cubic-bezier(.3,.8,.2,1), visibility .3s; }
+  aside[data-tab="map"] { transform: translateY(105%); visibility: hidden; }
+  .sheet-handle { display: block; position: sticky; top: 0; z-index: 1; background: var(--panel); padding: 8px 0 2px; border: 0; width: 100%; cursor: pointer; }
+  .sheet-handle::before { content: ""; display: block; width: 40px; height: 4px; border-radius: 2px; background: var(--line); margin: 0 auto; }
+  aside section { display: none; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  aside[data-tab="world"] section[data-p~="world"], aside[data-tab="location"] section[data-p~="location"], aside[data-tab="structures"] section[data-p~="structures"] { display: flex; }
+  aside section.m-only { display: none; }
+  aside[data-tab="world"] section.m-only { display: flex; }
+  #worldSlot .settings { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: end; }
+  #worldSlot .settings .seedf, #worldSlot .settings .seedinfo { grid-column: 1 / -1; }
+  #worldSlot .settings select, #worldSlot .settings .btn, #seed { width: 100%; }
+  #worldSlot .settings .btn { height: 42px; }
+  input[type=text], input[type=number], select { font-size: 16px; height: 42px; }
+  .btn.small { height: 36px; padding: 0 14px; font-size: 14px; }
+  .sitem { padding: 8px 4px; font-size: 14.5px; }
+  .nitem { padding: 9px 4px; }
+  .zoom button { width: 40px; height: 40px; font-size: 20px; }
+  .hud { font-size: 11px; padding: 5px 8px; }
+  .card { left: 10px; right: 10px; width: auto; }
+  .legend3d { display: none; }
+  .bar3d .pill { height: 32px; }
+  .mtabs { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--panel); border-top: 1px solid var(--line); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); z-index: 7; }
+  .mtabs button { height: 58px; border: 0; background: transparent; color: var(--muted); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11.5px; cursor: pointer; position: relative; }
+  .mtabs button[aria-selected="true"] { color: var(--accent); font-weight: 600; }
+  .mtabs button[aria-selected="true"]::after { content: ""; position: absolute; top: 0; left: 30%; right: 30%; height: 3px; border-radius: 0 0 3px 3px; background: var(--accent); }
+  #worldSlot .notice { font-size: 12.5px; }
+  dialog.about { width: 100%; max-width: none; max-height: 92vh; margin: auto 0 0; border-radius: 16px 16px 0 0; border-bottom: 0; }
+  dialog.about[open] { animation: sheetUp .32s cubic-bezier(.2,.9,.3,1); }
+  .about-head { padding: 14px 16px; gap: 12px; }
+  .about-head h2 { font-size: 18px; }
+  .about-head .blocklogo { width: 44px; height: 44px; }
+  .about-body { padding: 4px 16px 16px; }
+  .about-foot { padding: 10px 16px; }
+}
+@keyframes sheetUp { from { transform: translateY(40px); opacity: 0 } to { transform: none; opacity: 1 } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 </style>
 
 <div class="app">
   <header class="bar">
-    <div class="brand"><h1>Seed Cartographer</h1><span>Structures, biomes and terrain from any seed</span></div>
-    <div class="field seedf"><label for="seed">Seed</label><input id="seed" type="text" value="8675309" autocomplete="off" spellcheck="false"></div>
+    <div class="brand"><h1>Seed Cartographer</h1><span>Minecraft seed map and structure finder</span></div>
+    <div class="settings" id="settings">
+    <div class="field seedf"><label for="seed">Seed <span class="seedinfo" id="seedinfo"></span></label><input id="seed" type="text" value="8675309" autocomplete="off" spellcheck="false"></div>
     <div class="field"><label for="edition">Edition</label><select id="edition"><option value="java">Java</option><option value="bedrock">Bedrock</option></select></div>
     <div class="field"><label for="version">Version</label><select id="version"></select></div>
     <label class="check"><input id="large" type="checkbox"> Large biomes</label>
     <div class="field"><label for="radius">Search radius</label><select id="radius"><option value="5000">5,000 blocks</option><option value="10000" selected>10,000 blocks</option><option value="20000">20,000 blocks</option><option value="30000">30,000 blocks</option></select></div>
-    <button class="btn" id="randomSeed" type="button">Random seed</button>
+    <button class="btn" id="randomSeed" type="button" aria-label="Random seed">Random<span class="lbl-long"> seed</span></button>
     <button class="btn primary" id="load" type="button">Load world</button>
-    <span class="seedinfo" id="seedinfo"></span>
+    </div>
+    <div class="hdr-actions" id="hdrActions">
+      <button class="btn ghost withico" id="tourBtn" type="button" aria-label="Take the tour"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 19l4-14 10 7-7 2z"/></svg><span class="lbltxt">Tour</span></button>
+      <button class="btn withico" id="aboutBtn" type="button" aria-label="About Seed Cartographer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span class="lbltxt">About</span></button>
+    </div>
   </header>
-  <div class="notice" id="verNote">26.2 adds Sulfur Caves, a new underground biome. The surface map, terrain and structure spacing are the same as 1.21.4, but Sulfur Caves themselves are not drawn, and a few strongholds or trial chambers next to them may sit slightly differently in-game.</div>
+  <div class="notice" id="verNote"></div>
   <div class="notice" id="bedrockNote" hidden>Bedrock: biomes match Java for the same seed since 1.18, so the map and 3D view are right. Structure positions here use Java placement rules, and Bedrock places many structures differently, so check them in-game before you travel.</div>
   <main>
-    <aside>
-      <section>
+    <aside id="side" data-tab="map" aria-label="Controls">
+      <button class="sheet-handle" id="sheetHandle" type="button" aria-label="Close panel"></button>
+      <section class="m-only" data-p="world" id="worldSlot"><h2>World</h2></section>
+      <section data-p="location">
         <h2>Your location</h2>
         <div class="coords">
           <div class="field"><label for="locX">X</label><input id="locX" type="number" value="0"></div>
@@ -175,7 +395,7 @@ aside h2 { font-family: var(--f-display); font-weight: 500; font-size: 15px; mar
         </div>
         <p class="hint" id="locInfo">Paste the XYZ line from the F3 screen into X, like <code>-215 72 340</code>.</p>
       </section>
-      <section>
+      <section data-p="world">
         <h2>Dimension</h2>
         <div class="tabs" role="group" aria-label="Dimension">
           <button type="button" data-dim="0" aria-pressed="true">Overworld</button>
@@ -184,12 +404,12 @@ aside h2 { font-family: var(--f-display); font-weight: 500; font-size: 15px; mar
         </div>
         <div class="field"><label for="mapStyle">Map style</label><select id="mapStyle"><option value="terrain">Terrain with hill shading</option><option value="classic">Classic biome colours</option></select></div>
       </section>
-      <section>
+      <section data-p="structures">
         <div class="row" style="justify-content:space-between"><h2>Structures</h2><span class="hint" id="searchArea"></span></div>
         <div class="slist" id="slist"></div>
         <label class="check" style="height:auto"><input id="slime" type="checkbox"> Slime chunks (zoomed in)</label>
       </section>
-      <section>
+      <section data-p="location">
         <h2>Nearest to you</h2>
         <div class="near" id="near"></div>
       </section>
@@ -217,7 +437,60 @@ aside h2 { font-family: var(--f-display); font-weight: 500; font-size: 15px; mar
       </div>
     </div>
   </main>
+  <nav class="mtabs" id="mtabs" aria-label="Sections">
+    <button type="button" data-tab="map" aria-selected="true"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
+    <button type="button" data-tab="world" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg>World</button>
+    <button type="button" data-tab="location" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Location</button>
+    <button type="button" data-tab="structures" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>Structures</button>
+  </nav>
 </div>
+
+<dialog class="about" id="about" aria-labelledby="aboutTitle">
+  <div class="about-head"><svg class="blocklogo" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 58 19 32 32 6 19z" fill="#7cbd4b"/><path d="M32 6 58 19 32 32 6 19z" fill="url(#gtop)" opacity=".35"/><path d="M6 19 32 32v26L6 45z" fill="#8a5d3b"/><path d="M58 19 32 32v26l26-13z" fill="#6b4529"/><path d="M6 19 32 32v7L6 26z" fill="#6aa83c"/><path d="M58 19 32 32v7l26-13z" fill="#5a9433"/><path d="M6 26l4 2v4l-4-2zM14 30l4 2v3l-4-2zM22 34l4 2v4l-4-2zM36 37l4-2v4l-4 2zM46 32l4-2v3l-4 2zM54 28l4-2v3l-4 2z" fill="#5a9433"/><defs><pattern id="gtop" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#3f7a2a"/></pattern></defs></svg><div><h2 id="aboutTitle">About Seed Cartographer</h2><p>A free Minecraft seed map, structure finder and 3D world viewer</p></div>
+    <button class="close" type="button" id="aboutX" aria-label="Close">×</button></div>
+  <div class="about-body">
+    <h3>What it is</h3>
+    <p>Seed Cartographer recreates a Minecraft world from its seed. Enter the seed, edition and version, and it maps the biomes and finds every village, stronghold, temple, monument, mansion, ancient city, trial chamber and more. Enter your own coordinates to find what is closest to you, then look at the land around you in 3D.</p>
+    <p>It uses the same world-generation rules as the game, so structure positions and biomes match your world. Everything runs in your browser: your seed is never sent anywhere.</p>
+    <h3>What you can do</h3>
+    <div class="feat">
+      <div><b>Find structures</b>22 structure types across the Overworld, Nether and End, with counts and exact coordinates.</div>
+      <div><b>Biome map</b>A shaded terrain map or classic biome colours. Hover or tap anywhere to read the biome.</div>
+      <div><b>Your location</b>Enter X Y Z to mark yourself, list the nearest structures and see their direction.</div>
+      <div><b>3D view</b>Textured blocks, trees, water and shadows around any point. Walk around in first person.</div>
+      <div><b>Teleport commands</b>Copy a ready <code>/tp</code> command for any structure with one tap.</div>
+      <div><b>Every version</b>Java Alpha 1.2 to 26.3, and Bedrock 1.18 to 26.5x, with Large Biomes worlds too.</div>
+    </div>
+    <h3>Step by step</h3>
+    <ol class="steps">
+      <li><span><b>Get your seed.</b> In Java, type <code>/seed</code> in chat. In Bedrock, open the world's settings and copy the seed. Text seeds work too.</span></li>
+      <li><span><b>Enter the seed.</b> Paste it into the Seed box (on a phone, open the World tab).</span></li>
+      <li><span><b>Choose edition and version.</b> Pick Java or Bedrock and the version the world was created in. Tick Large Biomes if your world uses it.</span></li>
+      <li><span><b>Press Load world.</b> The map draws and the structure list fills in within a few seconds.</span></li>
+      <li><span><b>Explore the map.</b> Drag to move, scroll or pinch to zoom, and tap a structure icon to see its coordinates and copy a teleport command.</span></li>
+      <li><span><b>Add your location.</b> Press F3 in Java (or turn on Show Coordinates in Bedrock), enter X Y Z, then press Show on map. The nearest structures are listed with distance and direction.</span></li>
+      <li><span><b>Open the 3D view.</b> Press View in 3D to see the terrain around you or around a structure. Press Walk to explore on foot.</span></li>
+      <li><span><b>Switch dimension.</b> Choose Nether or End to find fortresses, bastions and end cities. Nether coordinates are worked out from your Overworld position.</span></li>
+    </ol>
+    <h3>How accurate is it?</h3>
+    <p>Structure positions and biomes are exact for Java worlds. Ground height in the 3D view follows the world's terrain noise but is smoothed, so cliffs and peaks are softer and there are no caves; trees and flowers are placed for decoration. Newer additions such as 26.2's Sulfur Caves and 26.3's Dappled Forest and Abandoned Camps are not drawn yet.</p>
+    <h3>Questions</h3>
+    <details><summary>Why isn't a structure there when I go to it?</summary><p>Check that the edition, version and Large Biomes setting match your world. Structures can also fail to generate in the game if the terrain is unsuitable, and the coordinates point to the corner of the structure's starting chunk.</p></details>
+    <details><summary>Does it work for Bedrock?</summary><p>Biomes match Java from Bedrock 1.18 onward. Bedrock places many structures differently from Java, so treat Bedrock structure positions as a guide and check them in-game.</p></details>
+    <details><summary>Is my seed uploaded?</summary><p>No. The world generator runs inside your browser, and your seed and location are only saved on your own device.</p></details>
+    <details><summary>How do Nether coordinates work?</summary><p>One block in the Nether equals eight in the Overworld. When you switch to the Nether, your Overworld X and Z are divided by 8 for you.</p></details>
+    <h3>Credits</h3>
+    <p>World generation uses <a href="https://github.com/Cubitect/cubiomes" target="_blank" rel="noopener">cubiomes</a> by Cubitect (MIT licence). The 3D view uses <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a>.</p>
+    <p class="legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. Minecraft is a trademark of Mojang Synergies AB.</p>
+  </div>
+  <div class="about-foot"><button class="btn withico" type="button" id="aboutTour"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 19l4-14 10 7-7 2z"/></svg>Take the tour</button><button class="btn primary" type="button" id="aboutClose">Close</button></div>
+</dialog>
+
+<div class="tour" id="tour" hidden role="dialog" aria-modal="true" aria-labelledby="tourTitle">
+  <div class="tour-spot" id="tourSpot"></div>
+  <div class="tour-card" id="tourCard" aria-live="polite"></div>
+</div>
+<template id="blockTpl"><svg class="blocklogo big" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 58 19 32 32 6 19z" fill="#7cbd4b"/><path d="M32 6 58 19 32 32 6 19z" fill="url(#gtop)" opacity=".35"/><path d="M6 19 32 32v26L6 45z" fill="#8a5d3b"/><path d="M58 19 32 32v26l26-13z" fill="#6b4529"/><path d="M6 19 32 32v7L6 26z" fill="#6aa83c"/><path d="M58 19 32 32v7l26-13z" fill="#5a9433"/><path d="M6 26l4 2v4l-4-2zM14 30l4 2v3l-4-2zM22 34l4 2v4l-4-2zM36 37l4-2v4l-4 2zM46 32l4-2v3l-4 2zM54 28l4-2v3l-4 2z" fill="#5a9433"/><defs><pattern id="gtop" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#3f7a2a"/></pattern></defs></svg></template>
 
 <script type="text/js-worker" id="workerSrc">
 // Background worker: runs the world generator off the page's main thread.
@@ -295,9 +568,10 @@ function makeTile(dim, style, scale, tx, tz) {
   return px;
 }
 function findStructures(id, r) {
-  if (id === "stronghold") { const n = W.api_strongholds(BUF, 128); return { n, w: 2, data: i32().slice(BUF / 4, BUF / 4 + 2 * n) }; }
+  if (id === "stronghold") { const n = W.api_strongholds(BUF, 128); if (!n && mc < 3) return null; return { n, w: 2, data: i32().slice(BUF / 4, BUF / 4 + 2 * n) }; }
   if (id === "spawn") { W.api_spawn(BUF); return { n: 1, w: 2, data: i32().slice(BUF / 4, BUF / 4 + 2) }; }
   if (id === 15) {
+    if (mc < 2) return null;
     const c0 = Math.floor(-r / 16), cw = Math.ceil(2 * r / 16), n = W.api_mineshafts(c0, c0, cw, cw, BUF, 40000);
     return n < 0 ? null : { n, w: 2, data: i32().slice(BUF / 4, BUF / 4 + 2 * n) };
   }
@@ -333,11 +607,59 @@ const WASM_URL = "cubiomes-1.wasm";
 const BIOMES = {"0":["ocean","ocean","#000070"],"1":["plains","plains","#8db360"],"2":["desert","desert","#fa9418"],"3":["windswept_hills","mountains","#606060"],"4":["forest","forest","#056621"],"5":["taiga","taiga","#0b6a5f"],"6":["swamp","swamp","#07f9b2"],"7":["river","river","#0000ff"],"8":["nether_wastes","nether_wastes","#572526"],"9":["the_end","the_end","#8080ff"],"10":["frozen_ocean","frozen_ocean","#7070d6"],"11":["frozen_river","frozen_river","#a0a0ff"],"12":["snowy_plains","snowy_tundra","#ffffff"],"13":["snowy_mountains","snowy_mountains","#a0a0a0"],"14":["mushroom_fields","mushroom_fields","#ff00ff"],"15":["mushroom_field_shore","mushroom_field_shore","#a000ff"],"16":["beach","beach","#fade55"],"17":["desert_hills","desert_hills","#d25f12"],"18":["wooded_hills","wooded_hills","#22551c"],"19":["taiga_hills","taiga_hills","#163933"],"20":["mountain_edge","mountain_edge","#72789a"],"21":["jungle","jungle","#507b0a"],"22":["jungle_hills","jungle_hills","#2c4205"],"23":["sparse_jungle","jungle_edge","#60930f"],"24":["deep_ocean","deep_ocean","#000030"],"25":["stony_shore","stone_shore","#a2a284"],"26":["snowy_beach","snowy_beach","#faf0c0"],"27":["birch_forest","birch_forest","#307444"],"28":["birch_forest_hills","birch_forest_hills","#1f5f32"],"29":["dark_forest","dark_forest","#40511a"],"30":["snowy_taiga","snowy_taiga","#31554a"],"31":["snowy_taiga_hills","snowy_taiga_hills","#243f36"],"32":["old_growth_pine_taiga","giant_tree_taiga","#596651"],"33":["giant_tree_taiga_hills","giant_tree_taiga_hills","#454f3e"],"34":["windswept_forest","wooded_mountains","#5b7352"],"35":["savanna","savanna","#bdb25f"],"36":["savanna_plateau","savanna_plateau","#a79d64"],"37":["badlands","badlands","#d94515"],"38":["wooded_badlands","wooded_badlands_plateau","#b09765"],"39":["badlands_plateau","badlands_plateau","#ca8c65"],"40":["small_end_islands","small_end_islands","#4b4bab"],"41":["end_midlands","end_midlands","#c9c959"],"42":["end_highlands","end_highlands","#b5b536"],"43":["end_barrens","end_barrens","#7070cc"],"44":["warm_ocean","warm_ocean","#0000ac"],"45":["lukewarm_ocean","lukewarm_ocean","#000090"],"46":["cold_ocean","cold_ocean","#202070"],"47":["deep_warm_ocean","deep_warm_ocean","#000050"],"48":["deep_lukewarm_ocean","deep_lukewarm_ocean","#000040"],"49":["deep_cold_ocean","deep_cold_ocean","#202038"],"50":["deep_frozen_ocean","deep_frozen_ocean","#404090"],"51":["seasonal_forest","seasonal_forest","#2f560f"],"52":["rainforest","rainforest","#47840e"],"53":["shrubland","shrubland","#789e31"],"127":["the_void","the_void","#000000"],"129":["sunflower_plains","sunflower_plains","#b5db88"],"130":["desert_lakes","desert_lakes","#ffbc40"],"131":["windswept_gravelly_hills","gravelly_mountains","#888888"],"132":["flower_forest","flower_forest","#2d8e49"],"133":["taiga_mountains","taiga_mountains","#339287"],"134":["swamp_hills","swamp_hills","#2fffda"],"140":["ice_spikes","ice_spikes","#b4dcdc"],"149":["modified_jungle","modified_jungle","#78a332"],"151":["modified_jungle_edge","modified_jungle_edge","#88bb37"],"155":["old_growth_birch_forest","tall_birch_forest","#589c6c"],"156":["tall_birch_hills","tall_birch_hills","#47875a"],"157":["dark_forest_hills","dark_forest_hills","#687942"],"158":["snowy_taiga_mountains","snowy_taiga_mountains","#597d72"],"160":["old_growth_spruce_taiga","giant_spruce_taiga","#818e79"],"161":["giant_spruce_taiga_hills","giant_spruce_taiga_hills","#6d7766"],"162":["modified_gravelly_mountains","modified_gravelly_mountains","#839b7a"],"163":["windswept_savanna","shattered_savanna","#e5da87"],"164":["shattered_savanna_plateau","shattered_savanna_plateau","#cfc58c"],"165":["eroded_badlands","eroded_badlands","#ff6d3d"],"166":["modified_wooded_badlands_plateau","modified_wooded_badlands_plateau","#d8bf8d"],"167":["modified_badlands_plateau","modified_badlands_plateau","#f2b48d"],"168":["bamboo_jungle","bamboo_jungle","#849500"],"169":["bamboo_jungle_hills","bamboo_jungle_hills","#5c6c04"],"170":["soul_sand_valley","soul_sand_valley","#4d3a2e"],"171":["crimson_forest","crimson_forest","#981a11"],"172":["warped_forest","warped_forest","#49907b"],"173":["basalt_deltas","basalt_deltas","#645f63"],"174":["dripstone_caves","dripstone_caves","#4e3012"],"175":["lush_caves","lush_caves","#283c00"],"177":["meadow","meadow","#60a445"],"178":["grove","grove","#47726c"],"179":["snowy_slopes","snowy_slopes","#c4c4c4"],"180":["jagged_peaks","jagged_peaks","#dcdcc8"],"181":["frozen_peaks","frozen_peaks","#b0b3ce"],"182":["stony_peaks","stony_peaks","#7b8f74"],"183":["deep_dark","deep_dark","#031f29"],"184":["mangrove_swamp","mangrove_swamp","#2ccc8e"],"185":["cherry_grove","cherry_grove","#ff91c8"],"186":["pale_garden","pale_garden","#696d95"]};
 
 // ---------- versions & structures ----------
-const VERSIONS = [
-  ["26.2 (Chaos Cubed)", 28, "new"], ["26.1", 28], ["1.21.4 – 1.21.11", 28], ["1.21.2 – 1.21.3", 27], ["1.21 – 1.21.1", 26], ["1.20.x", 25], ["1.19.3 – 1.19.4", 24],
-  ["1.19 – 1.19.2", 23], ["1.18.x", 22], ["1.17.x", 21], ["1.16.2 – 1.16.5", 20], ["1.16 – 1.16.1", 19], ["1.15.x", 18],
-  ["1.14.x", 17], ["1.13.x", 16], ["1.12.x", 15], ["1.11.x", 14], ["1.10.x", 13], ["1.9.x", 12], ["1.8.x", 11], ["1.7.x", 10]
-];
+// Every release, grouped. mc is the world-generation version used for it.
+const J = (labels, mc, note) => labels.map(l => ({ l, mc, note }));
+const NOTES = {
+  n263: "26.3 adds the Dappled Forest biome and Abandoned Camps, and 26.2 added underground Sulfur Caves. These aren't drawn yet: dappled forests show as the biome that was there before. All other structures and terrain are unchanged.",
+  n262: "26.2 adds Sulfur Caves, a new underground biome. They aren't drawn, and a few strongholds or trial chambers next to them may sit slightly differently in-game. The surface and all other structures are unchanged.",
+  nold: "Worlds from before Beta 1.8 have no villages, strongholds, temples or mineshafts. The map shows their biomes and terrain.",
+};
+const VERSION_GROUPS = {
+  java: [
+    ["26.x", [...J(["26.3"], 28, "n263"), ...J(["26.2"], 28, "n262"), ...J(["26.1.2", "26.1.1", "26.1"], 28)]],
+    ["1.21", [...J(["1.21.11", "1.21.10", "1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4"], 28), ...J(["1.21.3", "1.21.2"], 27), ...J(["1.21.1", "1.21"], 26)]],
+    ["1.20", J(["1.20.6", "1.20.5", "1.20.4", "1.20.3", "1.20.2", "1.20.1", "1.20"], 25)],
+    ["1.19", [...J(["1.19.4", "1.19.3"], 24), ...J(["1.19.2", "1.19.1", "1.19"], 23)]],
+    ["1.18", J(["1.18.2", "1.18.1", "1.18"], 22)],
+    ["1.17", J(["1.17.1", "1.17"], 21)],
+    ["1.16", [...J(["1.16.5", "1.16.4", "1.16.3", "1.16.2"], 20), ...J(["1.16.1", "1.16"], 19)]],
+    ["1.15", J(["1.15.2", "1.15.1", "1.15"], 18)],
+    ["1.14", J(["1.14.4", "1.14.3", "1.14.2", "1.14.1", "1.14"], 17)],
+    ["1.13", J(["1.13.2", "1.13.1", "1.13"], 16)],
+    ["1.12", J(["1.12.2", "1.12.1", "1.12"], 15)],
+    ["1.11", J(["1.11.2", "1.11.1", "1.11"], 14)],
+    ["1.10", J(["1.10.2", "1.10.1", "1.10"], 13)],
+    ["1.9", J(["1.9.4", "1.9.3", "1.9.2", "1.9.1", "1.9"], 12)],
+    ["1.8", J(["1.8.9", "1.8.8", "1.8.7", "1.8.6", "1.8.5", "1.8.4", "1.8.3", "1.8.2", "1.8.1", "1.8"], 11)],
+    ["1.7", J(["1.7.10", "1.7.9", "1.7.8", "1.7.7", "1.7.6", "1.7.5", "1.7.4", "1.7.2"], 10)],
+    ["1.6", J(["1.6.4", "1.6.2", "1.6.1"], 9)],
+    ["1.5", J(["1.5.2", "1.5.1", "1.5"], 8)],
+    ["1.4", J(["1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.2"], 7)],
+    ["1.3", J(["1.3.2", "1.3.1"], 6)],
+    ["1.2", J(["1.2.5", "1.2.4", "1.2.3", "1.2.2", "1.2.1"], 5)],
+    ["1.1 and 1.0", [...J(["1.1"], 4), ...J(["1.0"], 3)]],
+    ["Beta and Alpha", [...J(["Beta 1.8.1", "Beta 1.8"], 2), ...J(["Beta 1.7.3", "Beta 1.6 – 1.7.2", "Beta 1.0 – 1.5_02", "Alpha 1.2.0 – 1.2.6"], 1, "nold")]],
+  ],
+  bedrock: [
+    ["26.x", [...J(["26.50 – 26.52 (Wilderness Bound)"], 28, "n263"), ...J(["26.30 – 26.45 (Chaos Cubed)"], 28, "n262"), ...J(["26.10 – 26.23 (Tiny Takeover)", "26.0 – 26.3"], 28)]],
+    ["1.21", [...J(["1.21.50 – 1.21.13x (The Garden Awakens and later)"], 28), ...J(["1.21.20 – 1.21.44 (Bundles of Bravery)"], 27), ...J(["1.21.0 – 1.21.10 (Tricky Trials)"], 26)]],
+    ["1.20", J(["1.20.0 – 1.20.8x (Trails & Tales)"], 25)],
+    ["1.19", J(["1.19.0 – 1.19.8x (The Wild Update)"], 23)],
+    ["1.18", J(["1.18.0 – 1.18.3x (Caves & Cliffs II)"], 22)],
+  ],
+};
+const VERS = {};
+for (const ed in VERSION_GROUPS) for (const [, list] of VERSION_GROUPS[ed]) for (const v of list) { v.ed = ed; v.key = ed + "|" + v.l; VERS[v.key] = v; }
+function fillVersions(ed, keep) {
+  const sel = $("version"); sel.innerHTML = "";
+  for (const [g, list] of VERSION_GROUPS[ed]) {
+    const og = document.createElement("optgroup"); og.label = ed === "java" ? "Java " + g : "Bedrock " + g;
+    for (const v of list) { const o = document.createElement("option"); o.value = v.key; o.textContent = v.l; og.appendChild(o); }
+    sel.appendChild(og);
+  }
+  if (keep && VERS[keep] && VERS[keep].ed === ed) sel.value = keep;
+}
+const curVersion = () => VERS[$("version").value] || VERSION_GROUPS.java[0][1][0];
 const S = [
   { id: 5, name: "Village", g: "V", c: "#c8842a", dim: 0 },
   { id: "stronghold", name: "Stronghold", g: "SH", c: "#4b4f9e", dim: 0 },
@@ -436,7 +758,7 @@ function save() { try { localStorage.setItem("seedcart", JSON.stringify({ seed: 
 function restore() {
   try {
     const d = JSON.parse(localStorage.getItem("seedcart") || "null"); if (!d) return;
-    $("seed").value = d.seed; if (VERSIONS[+d.v]) $("version").value = d.v; $("edition").value = d.e; $("large").checked = d.l;
+    $("seed").value = d.seed; if (d.e === "java" || d.e === "bedrock") $("edition").value = d.e; fillVersions($("edition").value, d.v); $("large").checked = d.l;
     if (d.loc) { st.loc = d.loc; $("locX").value = d.loc.x; $("locY").value = d.loc.y; $("locZ").value = d.loc.z; }
   } catch (e) {}
 }
@@ -470,11 +792,11 @@ const surfaceY4 = () => (st.dim === 0 ? 16 : 0);
 async function loadWorld() {
   let seed = parseSeed($("seed").value);
   if (seed === null) { randomSeed(); seed = parseSeed($("seed").value); }
-  st.seed = seed; const vi = +$("version").value; st.mc = (VERSIONS[vi] || VERSIONS[0])[1]; st.verLabel = (VERSIONS[vi] || VERSIONS[0])[0];
-  $("verNote").hidden = !/^26\.2/.test(st.verLabel); st.edition = $("edition").value; st.large = $("large").checked;
+  const ver = curVersion(); st.seed = seed; st.mc = ver.mc; st.verLabel = ver.l;
+  st.edition = $("edition").value; st.large = $("large").checked;
   st.radius = +$("radius").value; st.gen++;
-  $("bedrockNote").hidden = st.edition !== "bedrock";
-  $("seedinfo").textContent = "Seed " + seed.toString();
+  updateNotes();
+
   const u = BigInt.asUintN(64, seed);
   W.api_init(st.mc, Number(u & 0xffffffffn), Number(u >> 32n), st.large ? 1 : 0);
   initWorkers();
@@ -1156,23 +1478,112 @@ $("randomSeed").onclick = () => { randomSeed(); $("load").onclick(); };
 $("slime").onchange = draw;
 $("mapStyle").onchange = () => { clearTiles(); draw(); try { localStorage.setItem("seedcart-style", $("mapStyle").value); } catch (e) {} };
 try { const ms = localStorage.getItem("seedcart-style"); if (ms) $("mapStyle").value = ms; } catch (e) {}
-$("edition").onchange = updateNotes;
-VERSIONS.forEach(([l], i) => { const o = document.createElement("option"); o.value = i; o.textContent = l; $("version").appendChild(o); });
+$("edition").onchange = () => { fillVersions($("edition").value); updateNotes(); };
+fillVersions("java");
 new ResizeObserver(resize).observe($("stage"));
 
 // Set the notes and seed label before the first paint so nothing jumps once the generator starts.
 function updateNotes() {
-  const v = VERSIONS[+$("version").value] || VERSIONS[0];
-  $("verNote").hidden = !/^26\.2/.test(v[0]);
+  const v = curVersion();
+  $("verNote").textContent = v.note ? NOTES[v.note] : ""; $("verNote").hidden = !v.note;
   $("bedrockNote").hidden = $("edition").value !== "bedrock";
-  const sd = parseSeed($("seed").value); $("seedinfo").textContent = sd === null ? "" : "Seed " + sd.toString();
+  const raw = $("seed").value.trim(), sd = parseSeed(raw);
+  $("seedinfo").textContent = sd !== null && !/^[+-]?\d+$/.test(raw) ? "= " + sd.toString() : "";
 }
 $("version").addEventListener("change", updateNotes);
+$("seed").addEventListener("input", updateNotes);
+// ---------- phone and laptop layouts ----------
+const mq = matchMedia("(max-width: 820px)");
+const isMobile = () => mq.matches;
+function applyLayout() {
+  const notes = [$("verNote"), $("bedrockNote")];
+  if (isMobile()) $("worldSlot").append($("settings"), ...notes);
+  else { $("hdrActions").before($("settings")); document.querySelector("header.bar").after(...notes); }
+}
+function setTab(t) {
+  $("side").dataset.tab = t;
+  document.querySelectorAll("#mtabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
+  if (t !== "map") $("side").scrollTop = 0;
+}
+function showMap() { if (isMobile()) setTab("map"); }
+document.querySelectorAll("#mtabs button").forEach(b => b.onclick = () => setTab(b.dataset.tab === $("side").dataset.tab ? "map" : b.dataset.tab));
+$("sheetHandle").onclick = () => setTab("map");
+(mq.addEventListener ? mq.addEventListener("change", applyLayout) : mq.addListener(applyLayout));
+applyLayout();
+// on phones, jump back to the map after actions that show something on it
+["goLoc", "load", "randomSeed", "view3dLoc"].forEach(id => $(id).addEventListener("click", showMap));
+$("near").addEventListener("click", e => { if (e.target.closest(".nitem")) showMap(); });
+
+// ---------- about ----------
+function openAbout() { const d = $("about"); if (d.showModal) { if (!d.open) d.showModal(); } else d.setAttribute("open", ""); }
+function closeAbout() { const d = $("about"); if (d.close) d.close(); else d.removeAttribute("open"); }
+$("aboutBtn").onclick = openAbout; $("aboutClose").onclick = closeAbout; $("aboutX").onclick = closeAbout;
+$("about").addEventListener("click", e => { if (e.target === $("about")) closeAbout(); });
+$("aboutTour").onclick = () => { closeAbout(); startTour(); };
+
+// ---------- guided tour ----------
+const TOUR = [
+  { hero: true, title: "Welcome to Seed Cartographer", text: "Find every structure in a Minecraft world, see your position on the map and explore the land in 3D. This quick tour shows you each tool." },
+  { el: "#seed", tab: "world", title: "Enter your seed", text: "Type or paste your world's seed. In Java, type /seed in chat to get it. Text seeds work too." },
+  { el: "#version", tab: "world", title: "Choose edition and version", text: "Pick Java or Bedrock, then the version your world was created in. Every release from Alpha to 26.3 is listed." },
+  { el: "#load", tab: "world", title: "Load the world", text: "Press Load world. The map and the structure list fill in within a few seconds." },
+  { el: "#stage", tab: "map", title: "Explore the map", text: "Drag to move, scroll or pinch to zoom. Tap a structure icon to see its coordinates and copy a /tp command." },
+  { el: "#slist", tab: "structures", title: "Structure list", text: "Turn each structure type on or off. The number shows how many were found inside the search radius." },
+  { el: ".coords", tab: "location", title: "Your location", text: "Enter the X Y Z from your F3 screen, then press Show on map. The red arrow marks you and the nearest structures are listed below." },
+  { el: "#view3dLoc", tab: "location", title: "See it in 3D", text: "Open a 3D view of the land around you, with trees, water and shadows. Press Walk to explore it on foot." },
+  { el: ".tabs", tab: "world", title: "Nether and End", text: "Switch dimension to find fortresses, bastions and end cities. Nether coordinates are worked out from your position." },
+  { el: "#aboutBtn", tab: "map", title: "Help is always here", text: "About has step-by-step instructions and answers to common questions. Press Tour to watch this again." },
+];
+let tourI = -1;
+function startTour() { tourI = 0; $("tour").hidden = false; document.addEventListener("keydown", tourKeys); showStep(); }
+function endTour() {
+  $("tour").hidden = true; tourI = -1; document.removeEventListener("keydown", tourKeys); showMap();
+  try { localStorage.setItem("seedcart-toured", "1"); } catch (e) {}
+}
+function tourKeys(e) { if (e.key === "Escape") endTour(); else if (e.key === "ArrowRight") stepBy(1); else if (e.key === "ArrowLeft") stepBy(-1); }
+function stepBy(d) { const n = tourI + d; if (n >= TOUR.length) return endTour(); if (n < 0) return; tourI = n; showStep(); }
+function showStep() {
+  const step = TOUR[tourI], spot = $("tourSpot"), card = $("tourCard");
+  if (isMobile()) setTab(step.hero ? "map" : step.tab || "map");
+  const dots = TOUR.map((_, i) => `<i class="${i === tourI ? "on" : ""}"></i>`).join("");
+  const last = tourI === TOUR.length - 1;
+  card.className = "tour-card" + (step.hero ? " hero" : "");
+  card.innerHTML = `<div class="tc-body">${step.hero ? $("blockTpl").innerHTML + `<div class="hero-pins">${["V", "SH", "AC", "TC", "EC"].map(g => { const s = S.find(x => x.g === g); return glyph(s); }).join("")}</div>` : `<span class="tc-step">Step ${tourI} of ${TOUR.length - 1}</span>`}
+    <h3 id="tourTitle">${step.title}</h3><p>${step.text}</p></div>
+    <div class="tour-foot">${step.hero ? `<button class="tour-skip" type="button" id="tSkip">Skip</button><span style="flex:1"></span><button class="btn primary" type="button" id="tNext">Start the tour</button>`
+      : `<div class="tour-dots">${dots}</div><button class="tour-skip" type="button" id="tSkip">Skip</button><button class="btn" type="button" id="tBack">Back</button><button class="btn primary" type="button" id="tNext">${last ? "Finish" : "Next"}</button>`}</div>`;
+  $("tNext").onclick = () => stepBy(1); $("tSkip").onclick = endTour; const bk = $("tBack"); if (bk) bk.onclick = () => stepBy(-1);
+  $("tNext").focus({ preventScroll: true });
+  const place = () => {
+    if (tourI < 0) return;
+    if (step.hero) { spot.classList.add("center"); card.style.left = (innerWidth - card.offsetWidth) / 2 + "px"; card.style.top = Math.max(16, (innerHeight - card.offsetHeight) / 2) + "px"; return; }
+    spot.classList.remove("center");
+    const el = document.querySelector(step.el); if (!el) return;
+    el.scrollIntoView({ block: "nearest" });
+    const r = el.getBoundingClientRect(), pad = 6;
+    const sl = Math.max(4, r.left - pad), stp = Math.max(4, r.top - pad), sw = Math.min(innerWidth - 8, r.width + pad * 2), sh = Math.min(innerHeight - 8, r.height + pad * 2);
+    Object.assign(spot.style, { left: sl + "px", top: stp + "px", width: sw + "px", height: sh + "px" });
+    const cw = card.offsetWidth, ch = card.offsetHeight, m = 14;
+    let top, left;
+    if (stp + sh + m + ch < innerHeight - 8) top = stp + sh + m;
+    else if (stp - m - ch > 8) top = stp - m - ch;
+    else top = Math.max(8, Math.min(innerHeight - ch - 8, stp + sh / 2 - ch / 2));
+    left = Math.max(8, Math.min(innerWidth - cw - 8, sl + sw / 2 - cw / 2));
+    if (top > stp - m - ch && top < stp + sh && sl + sw + m + cw < innerWidth) left = sl + sw + m; // beside a tall target
+    card.style.left = left + "px"; card.style.top = top + "px";
+  };
+  place(); setTimeout(place, isMobile() ? 330 : 60);
+}
+addEventListener("resize", () => { if (tourI >= 0) showStep(); });
+$("tourBtn").onclick = startTour;
+function maybeAutoTour() { let seen = false; try { seen = !!localStorage.getItem("seedcart-toured"); } catch (e) {} if (!seen) setTimeout(startTour, 900); }
+
 restore(); updateNotes();
 (async () => {
   try { await loadWasm(); } catch (e) { $("hud").textContent = "Could not start the world generator: " + e.message; return; }
   readLoc();
   st.dim = 0; const L = locInDim(); st.cx = L.x; st.cz = L.z; await loadWorld(); renderNear();
+  maybeAutoTour();
 })();
 </script>
 
