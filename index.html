@@ -437,11 +437,11 @@ ol.steps li span { padding-top: 2px; }
       </div>
     </div>
   </main>
-  <nav class="mtabs" id="mtabs" aria-label="Sections">
-    <button type="button" data-tab="map" aria-selected="true"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
-    <button type="button" data-tab="world" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg>World</button>
-    <button type="button" data-tab="location" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Location</button>
-    <button type="button" data-tab="structures" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>Structures</button>
+  <nav class="mtabs" id="mtabs" aria-label="Sections" role="tablist">
+    <button type="button" role="tab" id="tab-map" aria-controls="side" data-tab="map" aria-selected="true"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
+    <button type="button" role="tab" id="tab-world" aria-controls="side" data-tab="world" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg>World</button>
+    <button type="button" role="tab" id="tab-location" aria-controls="side" data-tab="location" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Location</button>
+    <button type="button" role="tab" id="tab-structures" aria-controls="side" data-tab="structures" aria-selected="false"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>Structures</button>
   </nav>
 </div>
 
@@ -490,7 +490,7 @@ ol.steps li span { padding-top: 2px; }
   <div class="tour-spot" id="tourSpot"></div>
   <div class="tour-card" id="tourCard" aria-live="polite"></div>
 </div>
-<template id="blockTpl"><svg class="blocklogo big" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 58 19 32 32 6 19z" fill="#7cbd4b"/><path d="M32 6 58 19 32 32 6 19z" fill="url(#gtop)" opacity=".35"/><path d="M6 19 32 32v26L6 45z" fill="#8a5d3b"/><path d="M58 19 32 32v26l26-13z" fill="#6b4529"/><path d="M6 19 32 32v7L6 26z" fill="#6aa83c"/><path d="M58 19 32 32v7l26-13z" fill="#5a9433"/><path d="M6 26l4 2v4l-4-2zM14 30l4 2v3l-4-2zM22 34l4 2v4l-4-2zM36 37l4-2v4l-4 2zM46 32l4-2v3l-4 2zM54 28l4-2v3l-4 2z" fill="#5a9433"/><defs><pattern id="gtop" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#3f7a2a"/></pattern></defs></svg></template>
+<template id="blockTpl"><svg class="blocklogo big" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 58 19 32 32 6 19z" fill="#7cbd4b"/><path d="M32 6 58 19 32 32 6 19z" fill="url(#gtop2)" opacity=".35"/><path d="M6 19 32 32v26L6 45z" fill="#8a5d3b"/><path d="M58 19 32 32v26l26-13z" fill="#6b4529"/><path d="M6 19 32 32v7L6 26z" fill="#6aa83c"/><path d="M58 19 32 32v7l26-13z" fill="#5a9433"/><path d="M6 26l4 2v4l-4-2zM14 30l4 2v3l-4-2zM22 34l4 2v4l-4-2zM36 37l4-2v4l-4 2zM46 32l4-2v3l-4 2zM54 28l4-2v3l-4 2z" fill="#5a9433"/><defs><pattern id="gtop2" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#3f7a2a"/></pattern></defs></svg></template>
 
 <script type="text/js-worker" id="workerSrc">
 // Background worker: runs the world generator off the page's main thread.
