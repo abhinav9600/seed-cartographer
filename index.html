@@ -22,8 +22,11 @@
 <meta name="apple-mobile-web-app-title" content="Seed Map">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preload" href="/logo-112.png" as="image">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Seed Cartographer">
@@ -51,14 +54,36 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://seed-cartographer.de5.net/#organization",
+  "name": "Seed Cartographer",
+  "url": "https://seed-cartographer.de5.net/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://seed-cartographer.de5.net/logo-512.png",
+    "width": 512,
+    "height": 512
+  },
+  "image": "https://seed-cartographer.de5.net/logo-512.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Seed Cartographer",
   "url": "https://seed-cartographer.de5.net/",
   "applicationCategory": "GameApplication",
   "operatingSystem": "Any (web browser)",
   "browserRequirements": "Requires JavaScript and WebAssembly",
-  "image": "https://seed-cartographer.de5.net/og-image.png",
+  "image": [
+    "https://seed-cartographer.de5.net/og-image.png",
+    "https://seed-cartographer.de5.net/logo-512.png"
+  ],
   "description": "Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.",
+  "publisher": {
+    "@id": "https://seed-cartographer.de5.net/#organization"
+  },
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -164,7 +189,9 @@ body { background: var(--bg); color: var(--ink); font-family: var(--f-body); fon
 button, input, select { font: inherit; color: inherit; }
 .app { height: 100%; display: flex; flex-direction: column; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 12px; gap: 12px; }
 header.bar { display: flex; flex-wrap: wrap; align-items: end; gap: 10px 14px; }
-.brand { display: flex; flex-direction: column; margin-right: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; margin-right: 8px; min-width: 0; }
+.brand-text { display: flex; flex-direction: column; min-width: 0; }
+.brand .logo { width: 44px; height: 44px; flex: none; filter: drop-shadow(0 2px 4px rgba(0,0,0,.25)); }
 .brand h1 { font-family: var(--f-display); font-weight: 700; font-size: 22px; margin: 0; letter-spacing: .02em; line-height: 1; }
 .brand span { color: var(--muted); font-size: 12px; margin-top: 4px; }
 .field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
@@ -268,7 +295,8 @@ ol.steps li span { padding-top: 2px; }
 
 /* animated grass block used in the welcome and About */
 .blocklogo { width: 56px; height: 56px; flex: none; animation: bob 3.2s ease-in-out infinite; filter: drop-shadow(0 6px 6px rgba(0,0,0,.25)); }
-.blocklogo.big { width: 92px; height: 92px; }
+.blocklogo.big { width: 112px; height: 112px; }
+.blocklogo { border-radius: 50%; }
 
 .tour { position: fixed; inset: 0; z-index: 1000; }
 .tour-spot { position: fixed; border-radius: 10px; box-shadow: 0 0 0 9999px rgba(8,12,10,.66); outline: 2px solid var(--accent); outline-offset: 2px;
@@ -314,6 +342,7 @@ ol.steps li span { padding-top: 2px; }
   header.bar { flex-wrap: nowrap; align-items: center; gap: 10px; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: var(--panel); border-bottom: 1px solid var(--line); }
   .brand { min-width: 0; margin: 0; }
   .brand h1 { font-size: 19px; }
+  .brand .logo { width: 38px; height: 38px; }
   .brand span { font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .hdr-actions { align-self: center; }
   .hdr-actions .btn { height: 36px; padding: 0 10px; }
@@ -361,7 +390,7 @@ ol.steps li span { padding-top: 2px; }
 
 <div class="app">
   <header class="bar">
-    <div class="brand"><h1>Seed Cartographer</h1><span>Minecraft seed map and structure finder</span></div>
+    <div class="brand"><img class="logo" src="logo-112.png" width="44" height="44" alt="Seed Cartographer logo"><div class="brand-text"><h1>Seed Cartographer</h1><span>Minecraft seed map and structure finder</span></div></div>
     <div class="settings" id="settings">
     <div class="field seedf"><label for="seed">Seed <span class="seedinfo" id="seedinfo"></span></label><input id="seed" type="text" value="8675309" autocomplete="off" spellcheck="false"></div>
     <div class="field"><label for="edition">Edition</label><select id="edition"><option value="java">Java</option><option value="bedrock">Bedrock</option></select></div>
@@ -446,7 +475,7 @@ ol.steps li span { padding-top: 2px; }
 </div>
 
 <dialog class="about" id="about" aria-labelledby="aboutTitle">
-  <div class="about-head"><svg class="blocklogo" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 58 19 32 32 6 19z" fill="#7cbd4b"/><path d="M32 6 58 19 32 32 6 19z" fill="url(#gtop)" opacity=".35"/><path d="M6 19 32 32v26L6 45z" fill="#8a5d3b"/><path d="M58 19 32 32v26l26-13z" fill="#6b4529"/><path d="M6 19 32 32v7L6 26z" fill="#6aa83c"/><path d="M58 19 32 32v7l26-13z" fill="#5a9433"/><path d="M6 26l4 2v4l-4-2zM14 30l4 2v3l-4-2zM22 34l4 2v4l-4-2zM36 37l4-2v4l-4 2zM46 32l4-2v3l-4 2zM54 28l4-2v3l-4 2z" fill="#5a9433"/><defs><pattern id="gtop" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#3f7a2a"/></pattern></defs></svg><div><h2 id="aboutTitle">About Seed Cartographer</h2><p>A free Minecraft seed map, structure finder and 3D world viewer</p></div>
+  <div class="about-head"><img class="blocklogo" src="icon-192.png" width="56" height="56" alt=""><div><h2 id="aboutTitle">About Seed Cartographer</h2><p>A free Minecraft seed map, structure finder and 3D world viewer</p></div>
     <button class="close" type="button" id="aboutX" aria-label="Close">×</button></div>
   <div class="about-body">
     <h3>What it is</h3>
@@ -490,7 +519,7 @@ ol.steps li span { padding-top: 2px; }
   <div class="tour-spot" id="tourSpot"></div>
   <div class="tour-card" id="tourCard" aria-live="polite"></div>
 </div>
-<template id="blockTpl"><svg class="blocklogo big" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 58 19 32 32 6 19z" fill="#7cbd4b"/><path d="M32 6 58 19 32 32 6 19z" fill="url(#gtop2)" opacity=".35"/><path d="M6 19 32 32v26L6 45z" fill="#8a5d3b"/><path d="M58 19 32 32v26l26-13z" fill="#6b4529"/><path d="M6 19 32 32v7L6 26z" fill="#6aa83c"/><path d="M58 19 32 32v7l26-13z" fill="#5a9433"/><path d="M6 26l4 2v4l-4-2zM14 30l4 2v3l-4-2zM22 34l4 2v4l-4-2zM36 37l4-2v4l-4 2zM46 32l4-2v3l-4 2zM54 28l4-2v3l-4 2z" fill="#5a9433"/><defs><pattern id="gtop2" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#3f7a2a"/></pattern></defs></svg></template>
+<template id="blockTpl"><img class="blocklogo big" src="icon-192.png" width="112" height="112" alt="Seed Cartographer logo"></template>
 
 <script type="text/js-worker" id="workerSrc">
 // Background worker: runs the world generator off the page's main thread.
