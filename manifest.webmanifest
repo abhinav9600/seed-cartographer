@@ -1,7 +1,7 @@
 {
   "name": "Seed Cartographer \u2013 Minecraft Seed Map",
   "short_name": "Seed Map",
-  "description": "Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.",
+  "description": "Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D. Forgot your seed? Find it from structures you have visited.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

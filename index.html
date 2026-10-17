@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Seed Cartographer – Minecraft Seed Map, Structure Finder & 3D World Viewer</title>
-<meta name="description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.">
-<meta name="keywords" content="minecraft seed map, minecraft structure finder, minecraft seed viewer, minecraft biome finder, minecraft 3d map, minecraft world viewer, seed cartographer, stronghold finder, village finder, ancient city finder, trial chambers finder, woodland mansion finder, ocean monument finder, nether fortress finder, bastion finder, end city finder, slime chunk finder, buried treasure finder, ruined portal finder, pillager outpost finder, desert temple finder, minecraft java seed map, minecraft bedrock seed map, minecraft 26.3 seed map, minecraft 26.2 seed map, minecraft 1.21 seed map, minecraft 1.20 seed map, minecraft 1.18 seed map, minecraft coordinates, minecraft seeds, large biomes">
+<meta name="description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D. Forgot your seed? Find it from structures you have visited.">
+<meta name="keywords" content="minecraft seed map, minecraft structure finder, minecraft seed viewer, minecraft biome finder, minecraft 3d map, minecraft world viewer, seed cartographer, stronghold finder, village finder, ancient city finder, trial chambers finder, woodland mansion finder, ocean monument finder, nether fortress finder, bastion finder, end city finder, slime chunk finder, buried treasure finder, ruined portal finder, pillager outpost finder, desert temple finder, minecraft java seed map, minecraft bedrock seed map, minecraft 26.3 seed map, minecraft 26.2 seed map, minecraft 1.21 seed map, minecraft 1.20 seed map, minecraft 1.18 seed map, minecraft coordinates, minecraft seeds, large biomes, find minecraft seed, minecraft seed finder from coordinates, minecraft seed cracker, find my minecraft seed, how to find minecraft seed">
 <meta name="author" content="Seed Cartographer">
 <meta name="application-name" content="Seed Cartographer">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -32,7 +32,7 @@
 <meta property="og:site_name" content="Seed Cartographer">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Seed Cartographer – Minecraft Seed Map & Structure Finder">
-<meta property="og:description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.">
+<meta property="og:description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D. Forgot your seed? Find it from structures you have visited.">
 <meta property="og:url" content="https://seed-cartographer.de5.net/">
 <meta property="og:image" content="https://seed-cartographer.de5.net/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -40,7 +40,7 @@
 <meta property="og:image:alt" content="Seed Cartographer showing a shaded Minecraft biome map with structure markers">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Seed Cartographer – Minecraft Seed Map & Structure Finder">
-<meta name="twitter:description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.">
+<meta name="twitter:description" content="Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D. Forgot your seed? Find it from structures you have visited.">
 <meta name="twitter:image" content="https://seed-cartographer.de5.net/og-image.png">
 <script type="application/ld+json">
 {
@@ -80,7 +80,7 @@
     "https://seed-cartographer.de5.net/og-image.png",
     "https://seed-cartographer.de5.net/logo-512.png"
   ],
-  "description": "Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D.",
+  "description": "Free Minecraft seed map for Java and Bedrock. Enter a seed and version (Alpha to 26.3) to find villages, strongholds, ancient cities, trial chambers, mansions, monuments, fortresses, bastions and end cities, then explore the world in 3D. Forgot your seed? Find it from structures you have visited.",
   "publisher": {
     "@id": "https://seed-cartographer.de5.net/#organization"
   },
@@ -107,7 +107,8 @@
     "Nearest structures to your coordinates",
     "3D world view with walk mode",
     "Nether and End support",
-    "Every Java and Bedrock version"
+    "Every Java and Bedrock version",
+    "Find a world seed from structure coordinates"
   ]
 }
 </script>
@@ -142,6 +143,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can it find a seed I don't know?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for Java worlds. Open Find my seed and enter at least 3 desert pyramids, jungle temples, witch huts or igloos plus a few other structures such as villages and shipwrecks. It recovers the seed from their positions, usually in under a minute."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do Nether coordinates work?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -159,7 +168,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="cubiomes-1.wasm" as="fetch" type="application/wasm" crossorigin="anonymous">
+<link rel="preload" href="cubiomes-2.wasm" as="fetch" type="application/wasm" crossorigin="anonymous">
 <script>
 // Load the web fonts without holding up the first paint.
 (function () { var l = document.createElement("link"); l.rel = "stylesheet"; l.href = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Pixelify+Sans:wght@500;700&display=optional"; document.head.appendChild(l); })();
@@ -293,6 +302,38 @@ ol.steps li span { padding-top: 2px; }
 .legal { color: var(--muted); font-size: 12px; margin-top: 10px !important; }
 .about-body a { color: var(--accent); }
 
+/* find my seed */
+.crack-intro { display: flex; flex-direction: column; gap: 8px; }
+.crack-rows { display: flex; flex-direction: column; gap: 6px; }
+.crow { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) 36px; gap: 6px; align-items: center; }
+.crow select, .crow input { width: 100%; font-family: var(--f-body); }
+.crow input { font-family: var(--f-mono); }
+.crow.bad input, .crow.bad select { border-color: #c0392b; }
+.crow .rm { height: 36px; width: 36px; border-radius: 6px; border: 1px solid var(--line); background: transparent; cursor: pointer; font-size: 18px; color: var(--muted); }
+.crow-head { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) 36px; gap: 6px; }
+.crow-head span { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.meter { display: flex; flex-direction: column; gap: 6px; background: var(--chip); border-radius: 8px; padding: 10px 12px; }
+.meter-bar { height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.meter-bar i { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 4px; transition: width .4s ease; }
+.meter-bar.warn i { background: #c98a1b; }
+.meter p { margin: 0; font-size: 13px; }
+.crack-run { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.cprog { display: flex; flex-direction: column; gap: 6px; }
+.cprog .meter-bar i { transition: width .2s linear; }
+.cprog p { margin: 0; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cresults { display: flex; flex-direction: column; gap: 8px; }
+.cres { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; border: 1px solid var(--accent); background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; animation: popIn .35s ease both; }
+.cres b { font-family: var(--f-mono); font-size: 17px; word-break: break-all; }
+.cres small { color: var(--muted); grid-column: 1; font-size: 12.5px; }
+.cres .row { grid-row: 1 / span 2; grid-column: 2; }
+.cmsg { border-radius: 8px; padding: 10px 12px; background: var(--warn-bg); color: var(--warn-ink); font-size: 13.5px; line-height: 1.5; }
+@media (max-width: 560px) {
+  .crow, .crow-head { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 40px; }
+  .crow select { grid-column: 1 / -1; }
+  .crow-head { display: none; }
+  .crow { padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .cres { grid-template-columns: 1fr; } .cres .row { grid-row: auto; grid-column: 1; }
+}
 /* animated grass block used in the welcome and About */
 .blocklogo { width: 56px; height: 56px; flex: none; animation: bob 3.2s ease-in-out infinite; filter: drop-shadow(0 6px 6px rgba(0,0,0,.25)); }
 .blocklogo.big { width: 112px; height: 112px; }
@@ -335,13 +376,21 @@ ol.steps li span { padding-top: 2px; }
   .lbl-long { display: none; }
   header.bar { gap: 10px 12px; }
 }
+@media (max-width: 1360px) and (min-width: 821px) {
+  #seed { width: 132px; } #version { width: 108px; } #radius { width: 130px; } #edition { width: 86px; }
+  header.bar { gap: 10px; }
+  .brand span { font-size: 11px; }
+}
 /* ---------- phones: full-screen map, bottom tabs, sliding panel ---------- */
 @media (max-width: 820px) {
   body { font-size: 15px; }
   .app { padding: 0; gap: 0; height: 100%; }
   header.bar { flex-wrap: nowrap; align-items: center; gap: 10px; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: var(--panel); border-bottom: 1px solid var(--line); }
   .brand { min-width: 0; margin: 0; }
-  .brand h1 { font-size: 19px; }
+  .brand h1 { font-size: 17px; white-space: nowrap; }
+  .brand .brand-text { overflow: hidden; }
+  .hdr-actions { gap: 4px; }
+  .hdr-actions .btn { padding: 0 8px; }
   .brand .logo { width: 38px; height: 38px; }
   .brand span { font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .hdr-actions { align-self: center; }
@@ -401,6 +450,7 @@ ol.steps li span { padding-top: 2px; }
     <button class="btn primary" id="load" type="button">Load world</button>
     </div>
     <div class="hdr-actions" id="hdrActions">
+      <button class="btn ghost withico" id="crackBtn" type="button" aria-label="Find my seed"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></svg><span class="lbltxt">Find my seed</span></button>
       <button class="btn ghost withico" id="tourBtn" type="button" aria-label="Take the tour"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 19l4-14 10 7-7 2z"/></svg><span class="lbltxt">Tour</span></button>
       <button class="btn withico" id="aboutBtn" type="button" aria-label="About Seed Cartographer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span class="lbltxt">About</span></button>
     </div>
@@ -488,6 +538,7 @@ ol.steps li span { padding-top: 2px; }
       <div><b>Your location</b>Enter X Y Z to mark yourself, list the nearest structures and see their direction.</div>
       <div><b>3D view</b>Textured blocks, trees, water and shadows around any point. Walk around in first person.</div>
       <div><b>Teleport commands</b>Copy a ready <code>/tp</code> command for any structure with one tap.</div>
+      <div><b>Find my seed</b>Forgot your seed? Enter structures you have found and it works the seed out.</div>
       <div><b>Every version</b>Java Alpha 1.2 to 26.3, and Bedrock 1.18 to 26.5x, with Large Biomes worlds too.</div>
     </div>
     <h3>Step by step</h3>
@@ -507,12 +558,33 @@ ol.steps li span { padding-top: 2px; }
     <details><summary>Why isn't a structure there when I go to it?</summary><p>Check that the edition, version and Large Biomes setting match your world. Structures can also fail to generate in the game if the terrain is unsuitable, and the coordinates point to the corner of the structure's starting chunk.</p></details>
     <details><summary>Does it work for Bedrock?</summary><p>Biomes match Java from Bedrock 1.18 onward. Bedrock places many structures differently from Java, so treat Bedrock structure positions as a guide and check them in-game.</p></details>
     <details><summary>Is my seed uploaded?</summary><p>No. The world generator runs inside your browser, and your seed and location are only saved on your own device.</p></details>
+    <details><summary>Can it find a seed I don't know?</summary><p>Yes, for Java worlds. Open Find my seed and enter at least 3 desert pyramids, jungle temples, witch huts or igloos plus a few other structures such as villages and shipwrecks. It recovers the seed from their positions, usually in under a minute.</p></details>
     <details><summary>How do Nether coordinates work?</summary><p>One block in the Nether equals eight in the Overworld. When you switch to the Nether, your Overworld X and Z are divided by 8 for you.</p></details>
     <h3>Credits</h3>
     <p>World generation uses <a href="https://github.com/Cubitect/cubiomes" target="_blank" rel="noopener">cubiomes</a> by Cubitect (MIT licence). The 3D view uses <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a>.</p>
     <p class="legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. Minecraft is a trademark of Mojang Synergies AB.</p>
   </div>
   <div class="about-foot"><button class="btn withico" type="button" id="aboutTour"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 19l4-14 10 7-7 2z"/></svg>Take the tour</button><button class="btn primary" type="button" id="aboutClose">Close</button></div>
+</dialog>
+
+<dialog class="about" id="crack" aria-labelledby="crackTitle">
+  <div class="about-head"><img class="blocklogo" src="icon-192.png" width="56" height="56" alt=""><div><h2 id="crackTitle">Find my seed</h2><p>Work out a Java world's seed from structures you have found in it</p></div>
+    <button class="close" type="button" id="crackX" aria-label="Close">×</button></div>
+  <div class="about-body">
+    <div class="crack-intro">
+      <p>Every structure's position comes from the world seed, so a handful of them is enough to work the seed out. Enter structures you have visited, then press Find seed. It runs in your browser and usually takes under a minute.</p>
+      <p class="hint">Stand in the middle of each structure and copy X and Z from the F3 screen. For a village use the bell or meeting point; for a shipwreck use the middle of the ship. Only do this on your own worlds or servers that allow it.</p>
+    </div>
+    <div class="field"><label for="crackVer">Version the world was created in (Java)</label><select id="crackVer"></select></div>
+    <div class="crow-head"><span>Structure</span><span>X</span><span>Z</span><span></span></div>
+    <div class="crack-rows" id="crackRows"></div>
+    <div class="row"><button class="btn small" type="button" id="crackAdd">+ Add structure</button><button class="btn small ghost" type="button" id="crackExample">Fill an example</button><button class="btn small ghost" type="button" id="crackClear">Clear</button></div>
+    <div class="meter" id="crackMeter"><div class="meter-bar"><i></i></div><p></p></div>
+    <div class="crack-run"><button class="btn primary withico" type="button" id="crackGo"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></svg>Find seed</button><button class="btn" type="button" id="crackStop" hidden>Stop</button></div>
+    <div class="cprog" id="crackProg" hidden><div class="meter-bar"><i></i></div><p></p></div>
+    <div class="cresults" id="crackOut" aria-live="polite"></div>
+    <details><summary>How does it work?</summary><p>Minecraft places structures using a random-number formula fed with the world seed. Desert pyramids, jungle temples, witch huts and igloos reveal the seed's lowest 20 bits directly. The search then tries all 268 million possibilities for the next 28 bits, using several parts of your processor at once. The last 16 bits come from how the game makes random seeds, or by checking which seed puts the right biomes under your structures.</p></details>
+  </div>
 </dialog>
 
 <div class="tour" id="tour" hidden role="dialog" aria-modal="true" aria-labelledby="tourTitle">
@@ -608,12 +680,40 @@ function findStructures(id, r) {
   return n < 0 ? null : { n, w: 3, data: i32().slice(BUF / 4, BUF / 4 + 3 * n) };
 }
 let latestGen = 0;
+let CB = 0;
+const u32 = () => new Uint32Array(W.memory.buffer);
+async function ensureW(module) {
+  if (W) return;
+  W = (await WebAssembly.instantiate(module, { env })).exports;
+  BUF = W.api_alloc(4 * 3 * 40000); TILE = W.api_alloc(4 * 64 * 64); HB = W.api_alloc(4 * 70 * 70); CB = W.api_alloc(4 * 2 * 4096);
+}
+const pairs = (n, max) => { const a = u32(), out = []; for (let i = 0; i < Math.min(n, max); i++) out.push([a[CB / 4 + 2 * i], a[CB / 4 + 2 * i + 1]]); return out; };
+const MASK48 = (1n << 48n) - 1n;
 async function handle(m) {
-  if (m.t === "init") {
-    if (!W) {
-      W = (await WebAssembly.instantiate(m.module, { env })).exports;
-      BUF = W.api_alloc(4 * 3 * 40000); TILE = W.api_alloc(4 * 64 * 64); HB = W.api_alloc(4 * 70 * 70);
+  if (m.t === "crackInit") {
+    await ensureW(m.module);
+    W.crack_reset(m.mc); for (const it of m.items) W.crack_add(it.type, it.x, it.z, it.tol); W.crack_set_pivot(0);
+    postMessage({ t: "crack", id: m.id });
+  } else if (m.t === "crackLow") {
+    const n = W.crack_low(CB, 8192); const a = u32();
+    postMessage({ t: "crack", id: m.id, count: n, lows: Array.from(a.subarray(CB / 4, CB / 4 + Math.min(n, 8192))) });
+  } else if (m.t === "crackHigh") {
+    const n = W.crack_high(m.L, m.h0, m.h1, CB, 4096); postMessage({ t: "crack", id: m.id, count: n, seeds: pairs(n, 4096) });
+  } else if (m.t === "crackQuick") {
+    // likely full seeds first: a text seed (32-bit hash) or a seed made by Random.nextLong()
+    const found = [];
+    for (const [lo, hi] of m.s48) {
+      const s48 = (BigInt(hi) << 32n) | BigInt(lo);
+      const text = BigInt.asUintN(64, BigInt.asIntN(32, BigInt(lo)));
+      if ((text & MASK48) === s48 && W.crack_check_full(Number(text & 0xffffffffn), Number(text >> 32n))) found.push({ lo: Number(text & 0xffffffffn), hi: Number(text >> 32n), kind: "text" });
+      const n = W.crack_nextlong(lo, hi, CB, 64);
+      for (const [a, b] of pairs(n, 64)) if (W.crack_check_full(a, b)) found.push({ lo: a, hi: b, kind: "random" });
     }
+    postMessage({ t: "crack", id: m.id, found });
+  } else if (m.t === "crackTop") {
+    const n = W.crack_top(m.lo, m.hi, m.u0, m.u1, CB, 64); postMessage({ t: "crack", id: m.id, count: n, seeds: pairs(n, 64) });
+  } else if (m.t === "init") {
+    await ensureW(m.module);
     mc = m.mc; BIOMES = m.biomes; latestGen = m.gen;
     W.api_init(m.mc, m.lo, m.hi, m.large);
   } else if (m.t === "tile") {
@@ -632,7 +732,7 @@ async function handle(m) {
 onmessage = e => { if (e.data.t === "init") latestGen = e.data.gen; chain = chain.then(() => handle(e.data)).catch(err => postMessage({ t: "error", message: String(err && err.message || err) })); };
 </script>
 <script>
-const WASM_URL = "cubiomes-1.wasm";
+const WASM_URL = "cubiomes-2.wasm";
 const BIOMES = {"0":["ocean","ocean","#000070"],"1":["plains","plains","#8db360"],"2":["desert","desert","#fa9418"],"3":["windswept_hills","mountains","#606060"],"4":["forest","forest","#056621"],"5":["taiga","taiga","#0b6a5f"],"6":["swamp","swamp","#07f9b2"],"7":["river","river","#0000ff"],"8":["nether_wastes","nether_wastes","#572526"],"9":["the_end","the_end","#8080ff"],"10":["frozen_ocean","frozen_ocean","#7070d6"],"11":["frozen_river","frozen_river","#a0a0ff"],"12":["snowy_plains","snowy_tundra","#ffffff"],"13":["snowy_mountains","snowy_mountains","#a0a0a0"],"14":["mushroom_fields","mushroom_fields","#ff00ff"],"15":["mushroom_field_shore","mushroom_field_shore","#a000ff"],"16":["beach","beach","#fade55"],"17":["desert_hills","desert_hills","#d25f12"],"18":["wooded_hills","wooded_hills","#22551c"],"19":["taiga_hills","taiga_hills","#163933"],"20":["mountain_edge","mountain_edge","#72789a"],"21":["jungle","jungle","#507b0a"],"22":["jungle_hills","jungle_hills","#2c4205"],"23":["sparse_jungle","jungle_edge","#60930f"],"24":["deep_ocean","deep_ocean","#000030"],"25":["stony_shore","stone_shore","#a2a284"],"26":["snowy_beach","snowy_beach","#faf0c0"],"27":["birch_forest","birch_forest","#307444"],"28":["birch_forest_hills","birch_forest_hills","#1f5f32"],"29":["dark_forest","dark_forest","#40511a"],"30":["snowy_taiga","snowy_taiga","#31554a"],"31":["snowy_taiga_hills","snowy_taiga_hills","#243f36"],"32":["old_growth_pine_taiga","giant_tree_taiga","#596651"],"33":["giant_tree_taiga_hills","giant_tree_taiga_hills","#454f3e"],"34":["windswept_forest","wooded_mountains","#5b7352"],"35":["savanna","savanna","#bdb25f"],"36":["savanna_plateau","savanna_plateau","#a79d64"],"37":["badlands","badlands","#d94515"],"38":["wooded_badlands","wooded_badlands_plateau","#b09765"],"39":["badlands_plateau","badlands_plateau","#ca8c65"],"40":["small_end_islands","small_end_islands","#4b4bab"],"41":["end_midlands","end_midlands","#c9c959"],"42":["end_highlands","end_highlands","#b5b536"],"43":["end_barrens","end_barrens","#7070cc"],"44":["warm_ocean","warm_ocean","#0000ac"],"45":["lukewarm_ocean","lukewarm_ocean","#000090"],"46":["cold_ocean","cold_ocean","#202070"],"47":["deep_warm_ocean","deep_warm_ocean","#000050"],"48":["deep_lukewarm_ocean","deep_lukewarm_ocean","#000040"],"49":["deep_cold_ocean","deep_cold_ocean","#202038"],"50":["deep_frozen_ocean","deep_frozen_ocean","#404090"],"51":["seasonal_forest","seasonal_forest","#2f560f"],"52":["rainforest","rainforest","#47840e"],"53":["shrubland","shrubland","#789e31"],"127":["the_void","the_void","#000000"],"129":["sunflower_plains","sunflower_plains","#b5db88"],"130":["desert_lakes","desert_lakes","#ffbc40"],"131":["windswept_gravelly_hills","gravelly_mountains","#888888"],"132":["flower_forest","flower_forest","#2d8e49"],"133":["taiga_mountains","taiga_mountains","#339287"],"134":["swamp_hills","swamp_hills","#2fffda"],"140":["ice_spikes","ice_spikes","#b4dcdc"],"149":["modified_jungle","modified_jungle","#78a332"],"151":["modified_jungle_edge","modified_jungle_edge","#88bb37"],"155":["old_growth_birch_forest","tall_birch_forest","#589c6c"],"156":["tall_birch_hills","tall_birch_hills","#47875a"],"157":["dark_forest_hills","dark_forest_hills","#687942"],"158":["snowy_taiga_mountains","snowy_taiga_mountains","#597d72"],"160":["old_growth_spruce_taiga","giant_spruce_taiga","#818e79"],"161":["giant_spruce_taiga_hills","giant_spruce_taiga_hills","#6d7766"],"162":["modified_gravelly_mountains","modified_gravelly_mountains","#839b7a"],"163":["windswept_savanna","shattered_savanna","#e5da87"],"164":["shattered_savanna_plateau","shattered_savanna_plateau","#cfc58c"],"165":["eroded_badlands","eroded_badlands","#ff6d3d"],"166":["modified_wooded_badlands_plateau","modified_wooded_badlands_plateau","#d8bf8d"],"167":["modified_badlands_plateau","modified_badlands_plateau","#f2b48d"],"168":["bamboo_jungle","bamboo_jungle","#849500"],"169":["bamboo_jungle_hills","bamboo_jungle_hills","#5c6c04"],"170":["soul_sand_valley","soul_sand_valley","#4d3a2e"],"171":["crimson_forest","crimson_forest","#981a11"],"172":["warped_forest","warped_forest","#49907b"],"173":["basalt_deltas","basalt_deltas","#645f63"],"174":["dripstone_caves","dripstone_caves","#4e3012"],"175":["lush_caves","lush_caves","#283c00"],"177":["meadow","meadow","#60a445"],"178":["grove","grove","#47726c"],"179":["snowy_slopes","snowy_slopes","#c4c4c4"],"180":["jagged_peaks","jagged_peaks","#dcdcc8"],"181":["frozen_peaks","frozen_peaks","#b0b3ce"],"182":["stony_peaks","stony_peaks","#7b8f74"],"183":["deep_dark","deep_dark","#031f29"],"184":["mangrove_swamp","mangrove_swamp","#2ccc8e"],"185":["cherry_grove","cherry_grove","#ff91c8"],"186":["pale_garden","pale_garden","#696d95"]};
 
 // ---------- versions & structures ----------
@@ -1550,6 +1650,163 @@ $("aboutBtn").onclick = openAbout; $("aboutClose").onclick = closeAbout; $("abou
 $("about").addEventListener("click", e => { if (e.target === $("about")) closeAbout(); });
 $("aboutTour").onclick = () => { closeAbout(); startTour(); };
 
+// ---------- find my seed ----------
+const CRACK_TYPES = [
+  ["Best: exact position", [[1, "Desert Pyramid"], [2, "Jungle Temple"], [3, "Witch Hut"], [4, "Igloo"]]],
+  ["Also helpful", [[5, "Village"], [7, "Shipwreck"], [6, "Ocean Ruin"], [10, "Pillager Outpost"], [11, "Ruined Portal"], [13, "Ancient City"], [23, "Trail Ruins"], [24, "Trial Chambers"], [8, "Ocean Monument"], [9, "Woodland Mansion"]]],
+];
+const EXACT = new Set([1, 2, 3, 4]);
+const tolFor = t => (EXACT.has(t) || t === 8 ? 0 : t === 9 ? 2 : 1);
+let crackRowN = 0, crackJob = null;
+function crackRow(type = 1, x = "", z = "") {
+  const id = ++crackRowN, d = document.createElement("div"); d.className = "crow";
+  d.innerHTML = `<select id="ct${id}" aria-label="Structure type">${CRACK_TYPES.map(([g, l]) => `<optgroup label="${g}">${l.map(([v, n]) => `<option value="${v}"${v === type ? " selected" : ""}>${n}</option>`).join("")}</optgroup>`).join("")}</select>
+    <input id="cx${id}" type="number" inputmode="numeric" placeholder="X" aria-label="X" value="${x}"><input id="cz${id}" type="number" inputmode="numeric" placeholder="Z" aria-label="Z" value="${z}">
+    <button class="rm" type="button" aria-label="Remove this structure">×</button>`;
+  d.querySelector(".rm").onclick = () => { d.remove(); crackMeter(); };
+  d.addEventListener("input", crackMeter); d.addEventListener("change", crackMeter);
+  $("crackRows").appendChild(d); return d;
+}
+function crackItems() {
+  return [...document.querySelectorAll("#crackRows .crow")].map(r => {
+    const [sel, ix, iz] = r.querySelectorAll("select, input");
+    return { row: r, type: +sel.value, x: ix.value.trim(), z: iz.value.trim() };
+  }).filter(i => i.x !== "" && i.z !== "").map(i => ({ ...i, x: Math.floor(+i.x), z: Math.floor(+i.z), tol: tolFor(i.type) }));
+}
+const crackMc = () => (VERS[$("crackVer").value] || VERSION_GROUPS.java[0][1][0]).mc;
+function crackMeter() {
+  const items = crackItems(), mc = crackMc();
+  document.querySelectorAll("#crackRows .crow").forEach(r => r.classList.remove("bad"));
+  W.crack_reset(mc);
+  let bad = 0, unsupported = 0;
+  for (const it of items) { const n = W.crack_add(it.type, it.x, it.z, it.tol); if (n === 0) { bad++; it.row.classList.add("bad"); } else if (n < 0) { unsupported++; it.row.classList.add("bad"); } }
+  const exact = items.filter(i => EXACT.has(i.type)).length, total = items.length;
+  const score = Math.min(1, (Math.min(exact, 3) / 3) * 0.6 + (Math.min(total, 7) / 7) * 0.4);
+  const bar = $("crackMeter").querySelector(".meter-bar"), p = $("crackMeter").querySelector("p");
+  bar.querySelector("i").style.width = Math.round(score * 100) + "%";
+  let msg, ok = false;
+  if (unsupported) msg = `${unsupported} structure${unsupported > 1 ? "s don't" : " doesn't"} exist in this version. Check the version or the structure type.`;
+  else if (bad) msg = `${bad} position${bad > 1 ? "s are" : " is"} impossible for that structure type, so ${bad > 1 ? "those coordinates are" : "the coordinates are"} probably mistyped or for a different structure.`;
+  else if (exact < 3) msg = `Add ${3 - exact} more desert pyramid${3 - exact > 1 ? "s" : ""}, jungle temple, witch hut or igloo. These give the most exact information (${exact} of 3).`;
+  else if (total < 7) msg = `Good start. Add ${7 - total} more structure${7 - total > 1 ? "s" : ""} of any kind, ideally villages or shipwrecks, to narrow it to one seed.`;
+  else { msg = `Ready: ${total} structures, ${exact} with exact positions.`; ok = true; }
+  bar.classList.toggle("warn", !ok); p.textContent = msg;
+  $("crackGo").disabled = !!(bad || unsupported) || exact < 2 || total < 4;
+  return items;
+}
+function fillCrackVersions(keep) {
+  const sel = $("crackVer"); sel.innerHTML = "";
+  for (const [g, list] of VERSION_GROUPS.java) {
+    const og = document.createElement("optgroup"); og.label = "Java " + g;
+    for (const v of list) { const o = document.createElement("option"); o.value = v.key; o.textContent = v.l; og.appendChild(o); }
+    sel.appendChild(og);
+  }
+  if (keep && VERS[keep] && VERS[keep].ed === "java") sel.value = keep;
+}
+function openCrack() {
+  if (!$("crackVer").options.length) { fillCrackVersions($("version").value); for (let i = 0; i < 4; i++) crackRow(i < 3 ? [1, 2, 3][i] : 5); }
+  crackMeter(); const d = $("crack"); if (d.showModal) { if (!d.open) d.showModal(); } else d.setAttribute("open", "");
+}
+function closeCrack() { const d = $("crack"); if (d.close) d.close(); else d.removeAttribute("open"); }
+$("crackBtn").onclick = openCrack; $("crackX").onclick = closeCrack;
+$("crack").addEventListener("click", e => { if (e.target === $("crack")) closeCrack(); });
+$("crackAdd").onclick = () => { crackRow(5).querySelector("input").focus(); crackMeter(); };
+$("crackClear").onclick = () => { $("crackRows").innerHTML = ""; $("crackOut").innerHTML = ""; for (let i = 0; i < 4; i++) crackRow(i < 3 ? [1, 2, 3][i] : 5); crackMeter(); };
+$("crackVer").onchange = crackMeter;
+$("crackExample").onclick = () => {
+  // structures from the world that is loaded on the map, so you can watch it find that seed
+  if (st.edition !== "java" || !st.loaded) { $("crackOut").innerHTML = `<div class="cmsg">Load a Java world on the map first, then press Fill an example.</div>`; return; }
+  const L = { x: st.loc.x, z: st.loc.z }, near = key => (st.results[key] || []).slice().sort((a, b) => Math.hypot(a.x - L.x, a.z - L.z) - Math.hypot(b.x - L.x, b.z - L.z));
+  const pick = [...[1, 2, 3, 4].flatMap(id => near("0:" + id)).sort((a, b) => Math.hypot(a.x - L.x, a.z - L.z) - Math.hypot(b.x - L.x, b.z - L.z)).slice(0, 4),
+    ...near("0:5").slice(0, 3), ...(near("0:7").length ? near("0:7") : near("0:6")).slice(0, 2)];
+  if (pick.length < 6) { $("crackOut").innerHTML = `<div class="cmsg">This world doesn't have enough structures nearby for an example. Try another seed.</div>`; return; }
+  $("crackRows").innerHTML = ""; $("crackOut").innerHTML = "";
+  fillCrackVersions($("version").value);
+  for (const o of pick) crackRow(o.s.id, o.x + 8, o.z + 8);
+  crackMeter();
+};
+
+function crackPool(n) {
+  const url = URL.createObjectURL(new Blob([$("workerSrc").textContent], { type: "text/javascript" }));
+  const ws = Array.from({ length: n }, () => new Worker(url));
+  let seq = 0; const pend = new Map();
+  ws.forEach(w => (w.onmessage = e => { const m = e.data; if (m.t === "error") { for (const [, r] of pend) r.rej(new Error(m.message)); pend.clear(); return; } const r = pend.get(m.id); if (r) { pend.delete(m.id); r.res(m); } }));
+  const call = (w, msg) => new Promise((res, rej) => { const id = ++seq; pend.set(id, { res, rej }); w.postMessage({ ...msg, id }); });
+  return {
+    ws, call,
+    async all(msg) { return Promise.all(ws.map(w => call(w, msg))); },
+    async run(tasks, onDone) { // spread tasks over the workers, one at a time each
+      let i = 0; const next = async w => { while (i < tasks.length && !this.stopped) { const t = tasks[i++]; onDone(await call(w, t), t); } };
+      await Promise.all(ws.map(next));
+    },
+    stop() { this.stopped = true; ws.forEach(w => w.terminate()); for (const [, r] of pend) r.rej(new Error("stopped")); pend.clear(); },
+  };
+}
+const toSeed = (lo, hi) => BigInt.asIntN(64, (BigInt(hi >>> 0) << 32n) | BigInt(lo >>> 0)).toString();
+function crackProgress(frac, text) { $("crackProg").hidden = false; $("crackProg").querySelector("i").style.width = (frac * 100).toFixed(1) + "%"; $("crackProg").querySelector("p").textContent = text; }
+function crackShow(found, note) {
+  const out = $("crackOut"); out.innerHTML = "";
+  if (!found.length) { out.innerHTML = `<div class="cmsg">${note}</div>`; out.scrollIntoView({ block: "nearest", behavior: "smooth" }); return; }
+  const seen = new Set();
+  for (const f of found) {
+    const seed = toSeed(f.lo, f.hi); if (seen.has(seed)) continue; seen.add(seed);
+    const d = document.createElement("div"); d.className = "cres";
+    d.innerHTML = `<b>${seed}</b><div class="row"><button class="btn small" type="button">Copy</button><button class="btn small primary" type="button">Load this seed</button></div>
+      <small>${f.kind === "random" ? "A randomly generated seed that matches every structure and its biome." : f.kind === "text" ? "Matches every structure. It looks like a seed that was typed in when the world was made." : "Matches every structure and its biome."}</small>`;
+    const [cp, ld] = d.querySelectorAll("button");
+    cp.onclick = () => navigator.clipboard.writeText(seed).then(() => (cp.textContent = "Copied"), () => (cp.textContent = seed));
+    ld.onclick = () => { $("edition").value = "java"; fillVersions("java", $("crackVer").value); $("seed").value = seed; updateNotes(); closeCrack(); showMap(); $("load").click(); };
+    out.appendChild(d);
+  }
+  if (note) out.insertAdjacentHTML("beforeend", `<p class="hint">${note}</p>`);
+  out.scrollIntoView({ block: "nearest", behavior: "smooth" });
+}
+async function runCrack() {
+  const items = crackMeter(), mc = crackMc();
+  if (!items.length) return;
+  items.sort((a, b) => (EXACT.has(b.type) - EXACT.has(a.type)) || (a.tol - b.tol)); // exact structures first: the first one drives the fast search
+  const n = Math.max(1, Math.min(8, (navigator.hardwareConcurrency || 4) - 1));
+  const pool = crackPool(n); crackJob = pool;
+  $("crackGo").hidden = true; $("crackStop").hidden = false; $("crackOut").innerHTML = "";
+  const t0 = performance.now();
+  try {
+    crackProgress(0, "Starting…");
+    await pool.all({ t: "crackInit", module: MODULE, mc, items: items.map(({ type, x, z, tol }) => ({ type, x, z, tol })) });
+    crackProgress(0.01, "Checking the lowest 20 bits…");
+    const low = await pool.call(pool.ws[0], { t: "crackLow" });
+    if (!low.count) return crackShow([], "No seed puts these structures where you found them. Check the version, the structure types and the coordinates, and make sure each position is near the middle of the structure.");
+    if (low.count > 96) return crackShow([], "There isn't enough exact information yet. Add more desert pyramids, jungle temples, witch huts or igloos, then try again.");
+    const SL = 1 << 23, tasks = [];
+    for (const L of low.lows) for (let h = 0; h < (1 << 28); h += SL) tasks.push({ t: "crackHigh", L, h0: h, h1: h + SL });
+    const s48 = new Map(); let done = 0;
+    await pool.run(tasks, r => {
+      for (const [lo, hi] of r.seeds) s48.set(lo + ":" + hi, [lo, hi]);
+      done++; const el = (performance.now() - t0) / 1000, eta = el / done * (tasks.length - done);
+      crackProgress(0.02 + 0.83 * done / tasks.length, `Searching 268 million possibilities${low.count > 1 ? ` × ${low.count}` : ""}… ${Math.round(100 * done / tasks.length)}%${done > 2 ? ` · about ${Math.ceil(eta)} s left` : ""}`);
+    });
+    if (pool.stopped) return;
+    const list = [...s48.values()];
+    if (!list.length) return crackShow([], "No seed puts these structures where you found them. Check the version, the structure types and the coordinates.");
+    crackProgress(0.86, `Found ${list.length} structure seed${list.length > 1 ? "s" : ""}. Checking biomes…`);
+    const per = Math.ceil(list.length / n), parts = pool.ws.map((w, i) => list.slice(i * per, (i + 1) * per)).filter(p => p.length);
+    const quick = (await Promise.all(parts.map((p, i) => pool.call(pool.ws[i], { t: "crackQuick", s48: p })))).flatMap(r => r.found);
+    if (quick.length) { crackProgress(1, `Done in ${Math.round((performance.now() - t0) / 1000)} s.`); return crackShow(quick); }
+    if (list.length > 24) return crackShow([], `${list.length} seeds still match these structures, and the world's seed was typed in by hand, which makes the last step slow. Add 2 or 3 more structures of different kinds (villages, shipwrecks, ocean ruins) and try again.`);
+    const top = [], tt = []; for (const [lo, hi] of list) for (let u = 0; u < 65536; u += 4096) tt.push({ t: "crackTop", lo, hi, u0: u, u1: u + 4096 });
+    done = 0;
+    await pool.run(tt, r => { for (const [lo, hi] of r.seeds) top.push({ lo, hi, kind: "biome" }); done++; crackProgress(0.86 + 0.14 * done / tt.length, `Checking biomes for the last 16 bits… ${Math.round(100 * done / tt.length)}%`); });
+    if (pool.stopped) return;
+    crackProgress(1, `Done in ${Math.round((performance.now() - t0) / 1000)} s.`);
+    crackShow(top, top.length > 1 ? "More than one seed fits. Add another structure to tell them apart, or try each one." : top.length ? "" : `These structures match ${list.length} structure seed${list.length > 1 ? "s" : ""}, but no full seed has the right biomes. Check that the version is right, and that each structure type is correct.`);
+  } catch (e) {
+    if (!pool.stopped) crackShow([], "Something went wrong while searching: " + e.message);
+  } finally {
+    pool.stop(); crackJob = null; $("crackGo").hidden = false; $("crackStop").hidden = true;
+  }
+}
+$("crackGo").onclick = runCrack;
+$("crackStop").onclick = () => { if (crackJob) crackJob.stop(); $("crackProg").hidden = true; crackShow([], "Stopped."); };
+
 // ---------- guided tour ----------
 const TOUR = [
   { hero: true, title: "Welcome to Seed Cartographer", text: "Find every structure in a Minecraft world, see your position on the map and explore the land in 3D. This quick tour shows you each tool." },
@@ -1561,6 +1818,7 @@ const TOUR = [
   { el: ".coords", tab: "location", title: "Your location", text: "Enter the X Y Z from your F3 screen, then press Show on map. The red arrow marks you and the nearest structures are listed below." },
   { el: "#view3dLoc", tab: "location", title: "See it in 3D", text: "Open a 3D view of the land around you, with trees, water and shadows. Press Walk to explore it on foot." },
   { el: ".tabs", tab: "world", title: "Nether and End", text: "Switch dimension to find fortresses, bastions and end cities. Nether coordinates are worked out from your position." },
+  { el: "#crackBtn", tab: "map", title: "Forgot your seed?", text: "Find my seed works out a Java world's seed from structures you have found in it." },
   { el: "#aboutBtn", tab: "map", title: "Help is always here", text: "About has step-by-step instructions and answers to common questions. Press Tour to watch this again." },
 ];
 let tourI = -1;
